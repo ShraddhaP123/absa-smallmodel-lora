@@ -22,9 +22,12 @@ import time
 from pathlib import Path
 
 import yaml
+from dotenv import load_dotenv
 
 from data.schema import GoldExample
 from eval.absa_eval import compute_metrics
+
+load_dotenv()
 
 RESULTS_CSV = Path("results/results.csv")
 PREDICTIONS_DIR = Path("results/predictions")
@@ -107,13 +110,29 @@ def run_api_backend(config: dict, golds: list[GoldExample]) -> tuple[dict[str, s
         client = anthropic.Anthropic()
 
         def call(prompt: str) -> str:
+            # newer Claude models reject an explicit `temperature` param outright
+            # (400: "temperature is deprecated for this model") rather than just
+            # ignoring it, so it's only included when the config asks for non-zero.
+            kwargs = {}
+            if config.get("temperature", 0.0):
+                kwargs["temperature"] = config["temperature"]
             resp = client.messages.create(
                 model=model,
                 max_tokens=config.get("max_new_tokens", 256),
-                temperature=config.get("temperature", 0.0),
+                # extended thinking is on by default for this model and eats into
+                # max_tokens, which truncated the JSON answer entirely on some
+                # examples (stop_reason=max_tokens, 230/256 tokens spent thinking).
+                # This task needs a direct structured answer, not reasoning traces.
+                thinking={"type": "disabled"},
                 messages=[{"role": "user", "content": prompt}],
+                **kwargs,
             )
-            return resp.content[0].text if resp.content else ""
+            # response content can include non-text blocks (e.g. ThinkingBlock)
+            # ahead of the actual answer; take the first real text block.
+            for block in resp.content:
+                if getattr(block, "type", None) == "text":
+                    return block.text
+            return ""
     else:
         raise ValueError(f"unknown api provider: {provider}")
 
@@ -212,6 +231,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--variant", required=True, help="path to a variants/*.yaml config")
     parser.add_argument("--notes", default="")
+    parser.add_argument(
+        "--limit", type=int, default=None,
+        help="score only the first N examples (cheap smoke test on paid API backends; "
+             "the resulting row is tagged as partial in notes, not a real result)",
+    )
     args = parser.parse_args()
 
     config = load_config(args.variant)
@@ -220,6 +244,10 @@ def main() -> None:
         raise ValueError(f"unknown backend: {backend_name}")
 
     golds = load_gold(config["domain"], config["split"])
+    if args.limit is not None:
+        golds = golds[: args.limit]
+        args.notes = f"[PARTIAL: first {args.limit} examples only] {args.notes}".strip()
+
     predictions, latencies = BACKENDS[backend_name](config, golds)
 
     PREDICTIONS_DIR.mkdir(parents=True, exist_ok=True)

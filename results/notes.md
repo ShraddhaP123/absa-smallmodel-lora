@@ -49,3 +49,33 @@ Disagreements on record:
     actual aspects are "value" and "lunch", not "place" or the town.
 
 ## Observations
+
+### Session 2 — Claude Sonnet 5 API baseline (ceiling-from-above)
+
+Full test splits, not a sample. See results.csv for exact numbers.
+
+  restaurants (n=304): aspect_f1=0.785  sentiment_acc=0.874  joint_f1=0.686  parse_rate=0.997
+  laptops     (n=223): aspect_f1=0.788  sentiment_acc=0.867  joint_f1=0.683  parse_rate=1.000
+
+Strikingly consistent across domains (~0.69 joint_f1 either way). Two things
+worth carrying into later sessions:
+
+1. **sentiment_acc isn't 1.0 even for a frontier model** (0.87 both domains).
+   So a chunk of the joint_f1 gap vs aspect_f1 is genuine polarity-judgment
+   difficulty in this dataset (sarcasm, mixed sentences), not just something
+   a bigger/better model would trivially fix. Don't assume a small model's
+   sentiment errors are purely a capability gap — some of this ceiling is
+   irreducible from the data itself.
+2. **parse_rate is a red herring for API models, but won't be for the LoRA
+   target model.** Sonnet parses at ~99-100% basically for free. The small
+   model in Session 3+ is a genuinely open question here — if its parse_rate
+   comes in noticeably below Sonnet's, that's a real signal, not noise.
+
+Technical gotcha hit while building this (fixed in eval/runner.py, not a
+data issue): claude-sonnet-5 runs extended thinking by default and it can
+eat the entire max_tokens budget before emitting the actual JSON answer
+(saw stop_reason=max_tokens with 230/256 tokens spent thinking, output
+empty). Fixed by passing thinking={"type":"disabled"} for the anthropic
+backend. Also: this model rejects an explicit `temperature` param outright
+(400, "deprecated for this model") rather than ignoring it — runner.py only
+sends it when the config's temperature is non-zero.

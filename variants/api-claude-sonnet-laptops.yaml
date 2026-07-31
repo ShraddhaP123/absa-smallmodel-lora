@@ -1,0 +1,12 @@
+name: api-claude-sonnet-laptops
+backend: api
+domain: laptops
+split: test
+prompt_template: variants/prompts/absa_extract.txt
+max_new_tokens: 256
+temperature: 0.0
+hardware: local
+
+api:
+  provider: anthropic
+  model: claude-sonnet-5

@@ -1,0 +1,223 @@
+{"id": "laptops-138", "raw_output": "[{\"term\": \"Size\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-468", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-120", "raw_output": "[{\"term\": \"safari\", \"polarity\": \"negative\"}, {\"term\": \"Mozzilla firfox\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-145", "raw_output": "[{\"term\": \"start menu\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-14", "raw_output": "[{\"term\": \"backlit keyboard\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1454", "raw_output": "[{\"term\": \"keyboard\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1205", "raw_output": "[{\"term\": \"Final Cut Pro\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-471", "raw_output": "[{\"term\": \"TFT panel\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1134", "raw_output": "[{\"term\": \"cords\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1204", "raw_output": "[{\"term\": \"support\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-43", "raw_output": "[]"}
+{"id": "laptops-692", "raw_output": "[{\"term\": \"Applecare\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-131", "raw_output": "[{\"term\": \"drag and drop feature\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-460", "raw_output": "[{\"term\": \"gigs\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-507", "raw_output": "[{\"term\": \"runs\", \"polarity\": \"positive\"}, {\"term\": \"loads\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-247", "raw_output": "[{\"term\": \"packing\", \"polarity\": \"positive\"}, {\"term\": \"functions\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-924", "raw_output": "[{\"term\": \"browser\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1059", "raw_output": "[{\"term\": \"graphics\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-897", "raw_output": "[{\"term\": \"Google Chrome\", \"polarity\": \"conflict\"}]"}
+{"id": "laptops-764", "raw_output": "[{\"term\": \"arm velcro\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1359", "raw_output": "[{\"term\": \"quality\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-638", "raw_output": "[{\"term\": \"pre installed software update\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-411", "raw_output": "[{\"term\": \"DVD burner\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1311", "raw_output": "[{\"term\": \"keyboard\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-433", "raw_output": "[{\"term\": \"temp\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-866", "raw_output": "[{\"term\": \"customer support\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1242", "raw_output": "[{\"term\": \"hard drive\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1080", "raw_output": "[{\"term\": \"design\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1368", "raw_output": "[{\"term\": \"battery\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-338", "raw_output": "[{\"term\": \"burn cd's\", \"polarity\": \"neutral\"}, {\"term\": \"web cam\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1125", "raw_output": "[{\"term\": \"hardrive\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-973", "raw_output": "[{\"term\": \"equipment\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-262", "raw_output": "[{\"term\": \"use\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-257", "raw_output": "[{\"term\": \"life span\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1090", "raw_output": "[{\"term\": \"battery\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-141", "raw_output": "[{\"term\": \"camera\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-995", "raw_output": "[{\"term\": \"AC plug\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-175", "raw_output": "[{\"term\": \"graphics quality\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1428", "raw_output": "[{\"term\": \"IT support technicians\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1377", "raw_output": "```json\n[\n  {\"term\": \"Windows update\", \"polarity\": \"negative\"},\n  {\"term\": \"HD\", \"polarity\": \"negative\"}\n]\n```"}
+{"id": "laptops-493", "raw_output": "[{\"term\": \"tech support\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-118", "raw_output": "[{\"term\": \"hard drive\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-490", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"positive\"}, {\"term\": \"operating system\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-629", "raw_output": "[{\"term\": \"iphoto\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-743", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-229", "raw_output": "[{\"term\": \"trackpad\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-39", "raw_output": "[{\"term\": \"warrenty\", \"polarity\": \"neutral\"}, {\"term\": \"Toshiba\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1000", "raw_output": "[{\"term\": \"OS\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-663", "raw_output": "[{\"term\": \"cost\", \"polarity\": \"positive\"}, {\"term\": \"worked\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1226", "raw_output": "[{\"term\": \"Internet Explorer\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1", "raw_output": "[{\"term\": \"service center\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1086", "raw_output": "[{\"term\": \"backlit keys\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1104", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-330", "raw_output": "[{\"term\": \"design\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-765", "raw_output": "[{\"term\": \"software\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1350", "raw_output": "[{\"term\": \"programs\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1459", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"positive\"}, {\"term\": \"battery life\", \"polarity\": \"positive\"}, {\"term\": \"storage\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1398", "raw_output": "[{\"term\": \"battery life\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1322", "raw_output": "[{\"term\": \"hard disc\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1308", "raw_output": "[{\"term\": \"Applications open\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-611", "raw_output": "[{\"term\": \"size\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1280", "raw_output": "[{\"term\": \"SATA controller\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-217", "raw_output": "[{\"term\": \"warranty\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1039", "raw_output": "[{\"term\": \"sleek\", \"polarity\": \"positive\"}, {\"term\": \"lightweight\", \"polarity\": \"positive\"}, {\"term\": \"charges\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-365", "raw_output": "[{\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1025", "raw_output": "[{\"term\": \"iLife\", \"polarity\": \"positive\"}, {\"term\": \"Microsoft Office\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-539", "raw_output": "[{\"term\": \"battery\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-6", "raw_output": "[{\"term\": \"GUI\", \"polarity\": \"negative\"}, {\"term\": \"screen\", \"polarity\": \"negative\"}, {\"term\": \"power light\", \"polarity\": \"negative\"}, {\"term\": \"hard drive light\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-929", "raw_output": "[{\"term\": \"customer service\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-323", "raw_output": "[{\"term\": \"driver\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-890", "raw_output": "[{\"term\": \"13 inch models\", \"polarity\": \"negative\"}, {\"term\": \"Intel i processors\", \"polarity\": \"negative\"}, {\"term\": \"edge\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-601", "raw_output": "[{\"term\": \"Keyboard\", \"polarity\": \"positive\"}, {\"term\": \"primary and secondary control buttons\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1480", "raw_output": "[{\"term\": \"repair\", \"polarity\": \"conflict\"}]"}
+{"id": "laptops-1446", "raw_output": "[{\"term\": \"backlit keyboard\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1312", "raw_output": "[{\"term\": \"three year warranty\", \"polarity\": \"neutral\"}, {\"term\": \"extended warranty\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1402", "raw_output": "[{\"term\": \"charger unit\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1099", "raw_output": "[{\"term\": \"shipment\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-234", "raw_output": "[]"}
+{"id": "laptops-23", "raw_output": "[{\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"features\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1133", "raw_output": "[{\"term\": \"games\", \"polarity\": \"neutral\"}, {\"term\": \"email\", \"polarity\": \"neutral\"}, {\"term\": \"music\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-514", "raw_output": "[{\"term\": \"battery\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1083", "raw_output": "[{\"term\": \"gaming capabilities\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-958", "raw_output": "[{\"term\": \"weight\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1220", "raw_output": "[{\"term\": \"Applecare tech support\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-781", "raw_output": "[{\"term\": \"cost\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-788", "raw_output": "[{\"term\": \"Bluetooth 3\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-130", "raw_output": "[{\"term\": \"abit slow now\", \"polarity\": \"negative\"}, {\"term\": \"still works well\", \"polarity\": \"positive\"}, {\"term\": \"ethernet\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1221", "raw_output": "[]"}
+{"id": "laptops-1469", "raw_output": "[{\"term\": \"surfing the web\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-327", "raw_output": "[{\"term\": \"warranty\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1285", "raw_output": "[{\"term\": \"reflectiveness of the display\", \"polarity\": \"negative\"}, {\"term\": \"brightness\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-313", "raw_output": "[{\"term\": \"apps on Facebook\", \"polarity\": \"positive\"}, {\"term\": \"watching movies\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-224", "raw_output": "[{\"term\": \"keyboard\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-96", "raw_output": "[{\"term\": \"color\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-186", "raw_output": "[{\"term\": \"human interface\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1010", "raw_output": "[{\"term\": \"Iphoto\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1043", "raw_output": "[{\"term\": \"display\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-283", "raw_output": "[{\"term\": \"software\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1387", "raw_output": "[{\"term\": \"Geek Squad\", \"polarity\": \"positive\"}, {\"term\": \"Customer Service\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-741", "raw_output": "[{\"term\": \"system\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-817", "raw_output": "[{\"term\": \"battery\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1195", "raw_output": "[{\"term\": \"ATI graphics card\", \"polarity\": \"positive\"}, {\"term\": \"value\", \"polarity\": \"positive\"}, {\"term\": \"Intel built-in card\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-877", "raw_output": "[{\"term\": \"laptop fans\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1197", "raw_output": "[{\"term\": \"features\", \"polarity\": \"positive\"}, {\"term\": \"speed\", \"polarity\": \"positive\"}, {\"term\": \"power\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-538", "raw_output": "[{\"term\": \"graphics\", \"polarity\": \"neutral\"}, {\"term\": \"html programming\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1103", "raw_output": "[{\"term\": \"design\", \"polarity\": \"positive\"}, {\"term\": \"colors\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1460", "raw_output": "[{\"term\": \"apple associates\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-505", "raw_output": "[{\"term\": \"value\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1475", "raw_output": "[{\"term\": \"leather carrying case\", \"polarity\": \"neutral\"}, {\"term\": \"keyboard\", \"polarity\": \"neutral\"}, {\"term\": \"mouse\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-542", "raw_output": "[{\"term\": \"battery life\", \"polarity\": \"conflict\"}]"}
+{"id": "laptops-292", "raw_output": "[{\"term\": \"Lion\", \"polarity\": \"neutral\"}, {\"term\": \"multi-touch features\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-939", "raw_output": "[{\"term\": \"iTunes\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1316", "raw_output": "[{\"term\": \"laptop\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-810", "raw_output": "[{\"term\": \"features\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1022", "raw_output": "[{\"term\": \"shift key\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1342", "raw_output": "[{\"term\": \"Apple store\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-435", "raw_output": "[{\"term\": \"OS\", \"polarity\": \"positive\"}, {\"term\": \"processor speed\", \"polarity\": \"positive\"}, {\"term\": \"thunderbolt port\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-644", "raw_output": "```json\n[{\"term\": \"programs\", \"polarity\": \"positive\"}, {\"term\": \"iphoto\", \"polarity\": \"positive\"}, {\"term\": \"editing capabilities\", \"polarity\": \"positive\"}, {\"term\": \"imail\", \"polarity\": \"positive\"}, {\"term\": \"address book\", \"polarity\": \"neutral\"}, {\"term\": \"imovie\", \"polarity\": \"neutral\"}]\n```"}
+{"id": "laptops-1161", "raw_output": "[{\"term\": \"motherboard\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-432", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-135", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"positive\"}, {\"term\": \"colors\", \"polarity\": \"positive\"}, {\"term\": \"resolution\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-548", "raw_output": "[{\"term\": \"starting-up time\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-821", "raw_output": "[{\"term\": \"motherboard\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-646", "raw_output": "[{\"term\": \"use\", \"polarity\": \"positive\"}, {\"term\": \"transport\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1468", "raw_output": "[{\"term\": \"hinge\", \"polarity\": \"neutral\"}, {\"term\": \"motherboard\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-469", "raw_output": "[{\"term\": \"TAB\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-114", "raw_output": "[{\"term\": \"Acer\", \"polarity\": \"negative\"}, {\"term\": \"software\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-664", "raw_output": "[{\"term\": \"discharges\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-449", "raw_output": "[{\"term\": \"hinge\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1140", "raw_output": "[]"}
+{"id": "laptops-1310", "raw_output": "```json\n[{\"term\": \"Windows\", \"polarity\": \"negative\"}, {\"term\": \"Acer\", \"polarity\": \"negative\"}, {\"term\": \"agents\", \"polarity\": \"negative\"}]\n```"}
+{"id": "laptops-552", "raw_output": "[{\"term\": \"lightweight\", \"polarity\": \"positive\"}, {\"term\": \"transporting\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-777", "raw_output": "[{\"term\": \"screen graphics\", \"polarity\": \"positive\"}, {\"term\": \"clarity\", \"polarity\": \"positive\"}, {\"term\": \"sharpness\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-946", "raw_output": "[{\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-334", "raw_output": "[{\"term\": \"internet speed\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1477", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1093", "raw_output": "[{\"term\": \"keyboard function\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-350", "raw_output": "[{\"term\": \"Skype\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1300", "raw_output": "[{\"term\": \"keyboard\", \"polarity\": \"positive\"}, {\"term\": \"plate\", \"polarity\": \"negative\"}, {\"term\": \"mouse command buttons\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1247", "raw_output": "[{\"term\": \"memory\", \"polarity\": \"negative\"}, {\"term\": \"Vista\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-146", "raw_output": "[{\"term\": \"internal bluray read/write drive\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1327", "raw_output": "[]"}
+{"id": "laptops-1399", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"positive\"}, {\"term\": \"side view angles\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-546", "raw_output": "[{\"term\": \"design\", \"polarity\": \"positive\"}, {\"term\": \"quality\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1372", "raw_output": "[{\"term\": \"touchpad\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-429", "raw_output": "```json\n[{\"term\": \"programs\", \"polarity\": \"positive\"}, {\"term\": \"Office\", \"polarity\": \"neutral\"}, {\"term\": \"files\", \"polarity\": \"neutral\"}, {\"term\": \"Office programs\", \"polarity\": \"neutral\"}]\n```"}
+{"id": "laptops-727", "raw_output": "[{\"term\": \"Runs\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-758", "raw_output": "[{\"term\": \"battery\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-333", "raw_output": "[{\"term\": \"memory\", \"polarity\": \"neutral\"}, {\"term\": \"speed\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-747", "raw_output": "[{\"term\": \"battery\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1301", "raw_output": "[{\"term\": \"features\", \"polarity\": \"positive\"}, {\"term\": \"benefits\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-928", "raw_output": "[{\"term\": \"space\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1445", "raw_output": "[{\"term\": \"phone\", \"polarity\": \"negative\"}, {\"term\": \"call center\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1439", "raw_output": "[{\"term\": \"computer\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-206", "raw_output": "[{\"term\": \"gaming\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1464", "raw_output": "[{\"term\": \"iWork\", \"polarity\": \"neutral\"}, {\"term\": \"MS Office\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-163", "raw_output": "[{\"term\": \"Runs Hot\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-592", "raw_output": "[{\"term\": \"video editing\", \"polarity\": \"positive\"}, {\"term\": \"performance\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-466", "raw_output": "[{\"term\": \"power adapter plug\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1354", "raw_output": "[{\"term\": \"out of pocket expense\", \"polarity\": \"negative\"}, {\"term\": \"Geek Squad\", \"polarity\": \"negative\"}, {\"term\": \"patches\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-93", "raw_output": "[{\"term\": \"weighed\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-142", "raw_output": "[{\"term\": \"display\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-393", "raw_output": "[{\"term\": \"graphics\", \"polarity\": \"negative\"}, {\"term\": \"warranty\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1182", "raw_output": "[{\"term\": \"interface device\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-740", "raw_output": "[{\"term\": \"hard drive\", \"polarity\": \"neutral\"}, {\"term\": \"mother board\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1266", "raw_output": "[{\"term\": \"battery\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1287", "raw_output": "[{\"term\": \"keyboard\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-600", "raw_output": "[{\"term\": \"trendy, high tech features\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1130", "raw_output": "[{\"term\": \"internet speed\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-161", "raw_output": "[{\"term\": \"keyboard\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-775", "raw_output": "[{\"term\": \"Charger\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-255", "raw_output": "[{\"term\": \"size\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1098", "raw_output": "[{\"term\": \"migration\", \"polarity\": \"negative\"}, {\"term\": \"firewire cable system\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-940", "raw_output": "[{\"term\": \"size\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-88", "raw_output": "[{\"term\": \"cooling system\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-541", "raw_output": "[{\"term\": \"use\", \"polarity\": \"positive\"}, {\"term\": \"navigate\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1236", "raw_output": "[{\"term\": \"use\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-704", "raw_output": "[{\"term\": \"USB ports\", \"polarity\": \"conflict\"}]"}
+{"id": "laptops-735", "raw_output": "[{\"term\": \"memory\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-198", "raw_output": "[{\"term\": \"installation time\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-778", "raw_output": "[{\"term\": \"customer support\", \"polarity\": \"positive\"}, {\"term\": \"performance\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-189", "raw_output": "[{\"term\": \"i5\", \"polarity\": \"positive\"}, {\"term\": \"rendering videos\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1474", "raw_output": "[{\"term\": \"tutorials\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-689", "raw_output": "[{\"term\": \"Boot Camp\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-440", "raw_output": "[{\"term\": \"switch\", \"polarity\": \"negative\"}, {\"term\": \"key combination\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-318", "raw_output": "[{\"term\": \"value\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1451", "raw_output": "[{\"term\": \"design\", \"polarity\": \"positive\"}, {\"term\": \"beauty of the product\", \"polarity\": \"positive\"}, {\"term\": \"technological advances\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-696", "raw_output": "[{\"term\": \"Registration/1st use\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-865", "raw_output": "[{\"term\": \"internals\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1429", "raw_output": "[{\"term\": \"customer service center\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-326", "raw_output": "[{\"term\": \"hard drive\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-13", "raw_output": "[{\"term\": \"usb devices\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-569", "raw_output": "[{\"term\": \"touchpad\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1206", "raw_output": "[{\"term\": \"runs\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-919", "raw_output": "[{\"term\": \"power supply\", \"polarity\": \"negative\"}, {\"term\": \"Asus\", \"polarity\": \"conflict\"}]"}
+{"id": "laptops-451", "raw_output": "[{\"term\": \"RMA service\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-859", "raw_output": "[{\"term\": \"bluray player\", \"polarity\": \"neutral\"}, {\"term\": \"book\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1472", "raw_output": "[{\"term\": \"use\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1436", "raw_output": "[{\"term\": \"Price\", \"polarity\": \"positive\"}, {\"term\": \"purpose\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1330", "raw_output": "[{\"term\": \"size\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-407", "raw_output": "[{\"term\": \"It\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1149", "raw_output": "[{\"term\": \"hard drive\", \"polarity\": \"negative\"}, {\"term\": \"mother board\", \"polarity\": \"negative\"}, {\"term\": \"dvd drive\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-54", "raw_output": "[{\"term\": \"heated up\", \"polarity\": \"negative\"}, {\"term\": \"opening my Documents folder\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1232", "raw_output": "[{\"term\": \"Vista Business\", \"polarity\": \"neutral\"}, {\"term\": \"index\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1034", "raw_output": "[{\"term\": \"delivery\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-476", "raw_output": "[{\"term\": \"Unibody construction\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-447", "raw_output": "[{\"term\": \"memory\", \"polarity\": \"positive\"}, {\"term\": \"hard drive\", \"polarity\": \"positive\"}, {\"term\": \"graphics\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-191", "raw_output": "[{\"term\": \"netbook\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-61", "raw_output": "[{\"term\": \"battery life\", \"polarity\": \"conflict\"}, {\"term\": \"upgrade\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-65", "raw_output": "[{\"term\": \"forward delete  key\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-864", "raw_output": "[{\"term\": \"thermal paste\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1209", "raw_output": "[{\"term\": \"screen\", \"polarity\": \"positive\"}, {\"term\": \"images\", \"polarity\": \"positive\"}, {\"term\": \"keyboard\", \"polarity\": \"positive\"}, {\"term\": \"fit\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-178", "raw_output": "[{\"term\": \"service department\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-1116", "raw_output": "[{\"term\": \"service\", \"polarity\": \"negative\"}]"}
+{"id": "laptops-1385", "raw_output": "[{\"term\": \"navigate\", \"polarity\": \"positive\"}, {\"term\": \"update programs\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-209", "raw_output": "[{\"term\": \"bluetooth\", \"polarity\": \"neutral\"}]"}
+{"id": "laptops-285", "raw_output": "[{\"term\": \"image\", \"polarity\": \"positive\"}, {\"term\": \"soud\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-457", "raw_output": "[{\"term\": \"computer\", \"polarity\": \"conflict\"}]"}
+{"id": "laptops-501", "raw_output": "[{\"term\": \"touch pad\", \"polarity\": \"positive\"}, {\"term\": \"buttons\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-563", "raw_output": "[{\"term\": \"look\", \"polarity\": \"positive\"}, {\"term\": \"dependability\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-51", "raw_output": "[{\"term\": \"Lap top\", \"polarity\": \"conflict\"}]"}
+{"id": "laptops-228", "raw_output": "[{\"term\": \"word processing\", \"polarity\": \"positive\"}, {\"term\": \"internet\", \"polarity\": \"positive\"}]"}
+{"id": "laptops-1309", "raw_output": "[{\"term\": \"hard drive\", \"polarity\": \"neutral\"}]"}

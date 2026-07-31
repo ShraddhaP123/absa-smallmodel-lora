@@ -79,3 +79,43 @@ empty). Fixed by passing thinking={"type":"disabled"} for the anthropic
 backend. Also: this model rejects an explicit `temperature` param outright
 (400, "deprecated for this model") rather than ignoring it — runner.py only
 sends it when the config's temperature is non-zero.
+
+### Session 3 — first LoRA fine-tune (r=8, SmolLM2-1.7B-Instruct, restaurants only)
+
+  LoRA r=8 (n=304): aspect_f1=0.762  sentiment_acc=0.803  joint_f1=0.612  parse_rate=0.990
+
+As a fraction of the Session 2 Sonnet ceiling on the same domain (0.686 joint_f1):
+89.2% of Sonnet's joint_f1, 97.0% of aspect_f1, 91.9% of sentiment_acc, 99.3%
+of parse_rate — from a 1.7B model, 3.1M trainable LoRA params (0.18% of the
+model), 18 minutes of training on a free Kaggle T4.
+
+**Finding:** aspect_f1 and parse_rate are both within ~1-3 points of Sonnet —
+the small model finds nearly as many correct aspects and produces valid JSON
+almost as reliably. The real gap is sentiment_acc (0.803 vs 0.874): once it
+finds the right aspect, it's noticeably more likely to get the polarity wrong
+than Sonnet is. That's what compounds into the wider joint_f1 gap. Suggests
+Session 4's ablations should focus on things that might help polarity
+judgment specifically (more epochs, MLP target modules, or more training
+data) rather than assuming aspect extraction is the bottleneck.
+
+Training was healthy and reproducible: two independent runs (one lost to a
+Kaggle session reset, retrained from scratch) produced near-identical loss
+curves. Both train and eval loss decreased every epoch (eval_loss:
+0.142 -> 0.126 -> 0.124) with no sign of overfitting at 3 epochs, though the
+epoch-2-to-3 improvement was small — 3 epochs is a reasonable stopping point
+for this first pass, not obviously under- or over-trained.
+
+**Known gap in this row:** `latency_p50_ms`/`latency_p95_ms` are blank —
+Kaggle's interactive notebook session recycled its kernel between the
+training+eval cell finishing and a follow-up cell trying to read
+results.csv back (a known Kaggle free-tier quirk: the interactive kernel can
+be recycled between cell executions, wiping /kaggle/working, independent of
+whether the notebook's own outputs are still visible). The four accuracy
+metrics come directly from the run's own printed console output, which
+*was* preserved; git_sha and config_hash were computed locally against the
+exact commit (186f584) Kaggle had cloned, since nothing changed in the repo
+in between. Latency wasn't guessed or backfilled — left blank per the
+project's rule against fabricating unmeasured fields. If per-example latency
+is needed later, rerun with a version of the notebook that captures
+`!cat results/results.csv` inside the same cell as training, not a
+follow-up one.

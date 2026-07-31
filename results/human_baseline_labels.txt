@@ -1,0 +1,19 @@
+# Fill in your labels below each sentence, one line per aspect you find.
+# Format: term = polarity        (polarity: positive | negative | neutral | conflict)
+# If you see zero aspects in a sentence, write: none
+# Don't delete the "id:" / sentence lines — just fill in the blank lines under each.
+
+id: restaurants-1161
+text: The zucchini and mashed potatoes are a blend of garlic and butter which simply melts in your mouth.
+your labels:positive
+
+
+id: restaurants-1561
+text: The service was attentive, yet unimposing, the food was far better than many notorious restaurants in Midtown and the wine list is extensive and well priced.
+your labels:positive
+
+
+id: restaurants-1372
+text: In such a crappy part of town to find a good value for lunch, this place is great.
+your labels:positive
+

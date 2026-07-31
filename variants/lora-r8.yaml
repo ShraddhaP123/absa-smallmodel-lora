@@ -1,0 +1,44 @@
+# Session 3 training config: LoRA rank 8 on SmolLM2-1.7B-Instruct's
+# attention projections. First-pass config — the goal is a working adapter,
+# not a tuned one (see PLAN.md Session 3).
+
+name: lora-r8
+base_model: HuggingFaceTB/SmolLM2-1.7B-Instruct
+domain: restaurants
+train_split: train
+val_split: val
+prompt_template: variants/prompts/absa_extract.txt
+max_seq_length: 512
+output_dir: checkpoints/lora-r8
+
+# rank=8: modest capacity, deliberately conservative for ~1.4k training
+# examples on a narrow, structured task (extract terms + polarity into a
+# fixed JSON shape) — we're mostly teaching output format and task framing,
+# not injecting much new knowledge, so a small rank should suffice.
+# alpha=16 (2x rank): the alpha/r=2 ratio is the standard starting heuristic
+# and controls how strongly the LoRA update is scaled relative to the frozen
+# base weights.
+# target_modules: attention projections only (not the MLP or embeddings) —
+# the most common default combination in LoRA fine-tuning, and a reasonable
+# first pass. Session 4's ablation could add gate/up/down_proj to test
+# whether MLP adaptation helps this task.
+lora:
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj]
+
+# lr=2e-4 is high relative to full fine-tuning (~2e-5) because LoRA only
+# updates a small number of new parameters, which tolerates (and needs) a
+# larger learning rate to move meaningfully in few epochs.
+# fp16, not bf16: T4 (Kaggle's GPU) is Turing architecture and doesn't have
+# native bf16 tensor core support the way Ampere+ GPUs do.
+training:
+  epochs: 3
+  per_device_train_batch_size: 4
+  gradient_accumulation_steps: 4
+  learning_rate: 2.0e-4
+  warmup_ratio: 0.03
+  lr_scheduler_type: cosine
+  logging_steps: 10
+  seed: 42

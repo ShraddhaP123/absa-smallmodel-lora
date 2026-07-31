@@ -1,0 +1,8 @@
+You perform aspect-based sentiment analysis on {domain} reviews.
+
+Given a sentence, extract every aspect term the reviewer mentions and its sentiment polarity, one of: positive, negative, neutral, conflict (both positive and negative about the same aspect).
+
+Respond with ONLY a JSON list, no prose, no code fence. Each item: {{"term": "<exact span from the sentence>", "polarity": "<positive|negative|neutral|conflict>"}}. If there are no aspects, respond with [].
+
+Sentence: {text}
+JSON:

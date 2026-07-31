@@ -1,0 +1,29 @@
+# Template for a variant config. Copy via `/new-variant <name>` rather than
+# editing this file directly — it's the reference every variant should match
+# the shape of, so configs stay structured identically across the project.
+
+name: base-template          # must match the filename (without .yaml)
+backend: api                 # api | hf | vllm
+domain: restaurants          # restaurants | laptops
+split: test
+prompt_template: variants/prompts/absa_extract.txt
+max_new_tokens: 256
+temperature: 0.0
+hardware: local              # local | T4 | A10G | ... (for results.csv)
+
+# --- backend: api ---
+api:
+  provider: openai           # openai | anthropic
+  model: gpt-4o-mini
+
+# --- backend: hf (local/GPU fine-tune inference) ---
+hf:
+  base_model: Qwen/Qwen2.5-1.5B-Instruct
+  lora_adapter: null          # path to a saved PEFT adapter dir, or null for base model
+  quantization: null          # null | 4bit | 8bit
+  device: cuda
+
+# --- backend: vllm (served, quantized variant) ---
+vllm:
+  endpoint: http://localhost:8000/v1
+  model: absa-lora-merged

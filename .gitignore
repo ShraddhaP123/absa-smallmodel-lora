@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+data/processed/
+checkpoints/
+*.log
+.DS_Store
+serve/*.tar

@@ -1,0 +1,1 @@
+timestamp,git_sha,config_hash,variant_name,backend,model,quantization,hardware,domain,split,n_examples,aspect_f1,sentiment_acc,joint_f1,parse_rate,latency_p50_ms,latency_p95_ms,cost_per_1k_examples_usd,notes

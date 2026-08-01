@@ -1,0 +1,18 @@
+# Evaluates the Session 4 ablation adapter (checkpoints/lora-r8-mlp) against
+# the same scorer used for lora-r8-eval and the Claude Sonnet 5 baseline.
+# Must run on the GPU (Kaggle) — checkpoints/lora-r8-mlp only exists there.
+
+name: lora-r8-mlp-eval
+backend: hf
+domain: restaurants
+split: test
+prompt_template: variants/prompts/absa_extract.txt
+max_new_tokens: 256
+temperature: 0.0
+hardware: T4
+
+hf:
+  base_model: HuggingFaceTB/SmolLM2-1.7B-Instruct
+  lora_adapter: checkpoints/lora-r8-mlp
+  quantization: null
+  device: cuda

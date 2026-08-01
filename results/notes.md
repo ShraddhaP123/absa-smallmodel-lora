@@ -119,3 +119,51 @@ project's rule against fabricating unmeasured fields. If per-example latency
 is needed later, rerun with a version of the notebook that captures
 `!cat results/results.csv` inside the same cell as training, not a
 follow-up one.
+
+### Session 4 — ablation: add MLP target modules (r8-mlp vs r8)
+
+Single-variable change from Session 3: same rank (8), alpha (16), data,
+epochs (3), learning rate — only target_modules changed, adding
+gate_proj/up_proj/down_proj (the MLP/feedforward layers) alongside the
+same four attention projections.
+
+  r8 attn-only  (n=304): aspect_f1=0.762  sentiment_acc=0.803  joint_f1=0.612  parse_rate=0.990
+  r8 + MLP      (n=304): aspect_f1=0.780  sentiment_acc=0.810  joint_f1=0.632  parse_rate=0.993
+
+As a fraction of Sonnet's ceiling (0.686 joint_f1 / 0.785 aspect_f1 / 0.874
+sentiment_acc / 0.997 parse_rate): joint_f1 92.0% (was 89.2%), aspect_f1
+99.3% (was 97.0%) -- essentially matches Sonnet's aspect-finding now --
+sentiment_acc 92.7% (was 91.9%), parse_rate 99.7% (was 99.3%).
+
+**Finding, and it's more nuanced than the hypothesis predicted.** The
+hypothesis going in was "MLP adaptation should specifically help polarity
+judgment, since attention only decides what relates to what." That's not
+actually what happened: aspect_f1 improved the most (+2.4% relative),
+sentiment_acc barely moved (+0.8% relative). So the sentiment-accuracy gap
+vs Sonnet is still essentially unclosed after this change -- adding MLP
+capacity made the model better at *finding* aspects, not meaningfully
+better at *judging sentiment* once it found them. That's a real result
+even though it doesn't confirm the hypothesis: it suggests the remaining
+sentiment_acc gap looks more like a genuine capability ceiling for this
+1.7B model on this task than something more LoRA capacity alone fixes.
+Worth testing directly in a future session (more/better training data
+specifically for ambiguous-sentiment examples, rather than more model
+capacity).
+
+**Cost of this change, not free:** trainable params went from 3,145,728
+(0.18% of the model) to 9,043,968 (0.53%) -- roughly 2.9x more -- and wall-
+clock training time went from ~1090s to 1297s (+19%). Both train and eval
+loss were lower at every epoch than the attn-only run (eval_loss:
+0.133 -> 0.116 -> 0.113, vs 0.142 -> 0.126 -> 0.124), so the extra capacity
+is buying real generalization, not just overfitting -- but it's a real
+tradeoff to weigh against a ~3% relative joint_f1 gain, especially once
+Session 6's serving-cost numbers are in.
+
+This run's Kaggle cell combined setup+train+eval+`cat results.csv` into a
+single cell (lesson from Session 3's session-reset losses) and captured
+real latency for the first time: p50=1396.6ms, p95=3618.1ms. Not
+apples-to-apples against Sonnet's API latency (different serving
+substrate entirely -- local `model.generate()` vs a network API call) and
+there's no comparable number for the Session 3 r8 attn-only run (lost to
+the session reset), so this can't yet be compared against that variant's
+latency, only against Sonnet's as a rough reference point.

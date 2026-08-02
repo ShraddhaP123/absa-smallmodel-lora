@@ -26,9 +26,12 @@ from eval.runner import build_prompt
 
 
 def load_examples(domain: str, split: str) -> list[GoldExample]:
-    path = Path("data/processed") / f"{domain}_{split}.jsonl"
+    return load_examples_from_path(Path("data/processed") / f"{domain}_{split}.jsonl")
+
+
+def load_examples_from_path(path: Path) -> list[GoldExample]:
     examples = []
-    with path.open() as f:
+    with Path(path).open() as f:
         for line in f:
             line = line.strip()
             if line:
@@ -111,12 +114,18 @@ def main() -> None:
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
+    train_examples = load_examples(config["domain"], config["train_split"])
+    n_real = len(train_examples)
+    for extra_path in config.get("extra_train_files", []):
+        extra = load_examples_from_path(extra_path)
+        train_examples += extra
+        print(f"added {len(extra)} extra training examples from {extra_path}")
+
+    # val/test are never extended -- only real gold data is used to measure
+    # generalization or to score the final result. Mixing synthetic examples
+    # into eval would make the reported metrics not comparable to earlier runs.
     train_dataset = ABSADataset(
-        load_examples(config["domain"], config["train_split"]),
-        tokenizer,
-        config["prompt_template"],
-        config["domain"],
-        config["max_seq_length"],
+        train_examples, tokenizer, config["prompt_template"], config["domain"], config["max_seq_length"]
     )
     val_dataset = ABSADataset(
         load_examples(config["domain"], config["val_split"]),
@@ -125,7 +134,8 @@ def main() -> None:
         config["domain"],
         config["max_seq_length"],
     )
-    print(f"train examples: {len(train_dataset)}, val examples: {len(val_dataset)}")
+    print(f"train examples: {len(train_dataset)} ({n_real} real + {len(train_examples) - n_real} synthetic), "
+          f"val examples: {len(val_dataset)}")
 
     model = AutoModelForCausalLM.from_pretrained(config["base_model"], dtype=torch.float16)
 

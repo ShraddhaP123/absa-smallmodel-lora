@@ -3,7 +3,12 @@ __pycache__/
 .venv/
 venv/
 .env
-data/processed/
+data/processed/*
+# Exception: synthetic data isn't reproducible like the real data is (no
+# temperature control on the generating model means re-running produces
+# different sentences) -- committed so every session trains on the exact
+# same set rather than paying to regenerate a different one.
+!data/processed/*_synthetic.jsonl
 checkpoints/
 *.log
 .DS_Store

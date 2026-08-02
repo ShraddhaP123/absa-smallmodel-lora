@@ -1,0 +1,18 @@
+# Evaluates the Session 5 adapter (checkpoints/lora-r8-mlp-synth) against the
+# same scorer used for every prior variant. Must run on the GPU (Kaggle) --
+# checkpoints/lora-r8-mlp-synth only exists there.
+
+name: lora-r8-mlp-synth-eval
+backend: hf
+domain: restaurants
+split: test
+prompt_template: variants/prompts/absa_extract.txt
+max_new_tokens: 256
+temperature: 0.0
+hardware: T4
+
+hf:
+  base_model: HuggingFaceTB/SmolLM2-1.7B-Instruct
+  lora_adapter: checkpoints/lora-r8-mlp-synth
+  quantization: null
+  device: cuda

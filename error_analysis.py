@@ -160,9 +160,10 @@ def main() -> None:
         "samples": {k: v[: args.sample_per_category] for k, v in categories.items()},
     }
 
-    if args.llm_summary:
-        report["wrong_polarity_llm_summary"] = llm_summarize_wrong_polarity(categories)
-
+    # Save and print the deterministic report FIRST -- this is the reliable
+    # core of the tool. The LLM pass is optional/diagnostic and must never be
+    # able to take the deterministic results down with it if it fails (e.g.
+    # no API key available in this environment).
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w") as f:
@@ -173,10 +174,19 @@ def main() -> None:
     for cat, count in report["category_counts"].items():
         pct = (count / total_errors * 100) if total_errors else 0.0
         print(f"{cat:<42} {count:>5}   {pct:>5.1f}%")
-    if args.llm_summary:
-        print("\n--- wrong-polarity themes (Claude Sonnet 5) ---")
-        print(report["wrong_polarity_llm_summary"])
     print(f"\nfull report -> {out_path}")
+
+    if args.llm_summary:
+        try:
+            summary = llm_summarize_wrong_polarity(categories)
+        except Exception as e:
+            print(f"\n--- wrong-polarity themes: SKIPPED ({type(e).__name__}: {e}) ---")
+        else:
+            report["wrong_polarity_llm_summary"] = summary
+            with out_path.open("w") as f:  # re-save with the summary included
+                json.dump(report, f, indent=2)
+            print("\n--- wrong-polarity themes (Claude Sonnet 5) ---")
+            print(summary)
 
 
 if __name__ == "__main__":

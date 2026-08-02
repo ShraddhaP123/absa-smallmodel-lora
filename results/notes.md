@@ -167,3 +167,61 @@ substrate entirely -- local `model.generate()` vs a network API call) and
 there's no comparable number for the Session 3 r8 attn-only run (lost to
 the session reset), so this can't yet be compared against that variant's
 latency, only against Sonnet's as a rough reference point.
+
+### Session 5 — synthetic data targeting conflict/sarcasm/neutral/understatement
+
+Single-variable change from Session 4 (the r8+MLP config): added 290
+synthetic examples (see generate_synthetic.py) to the real 1,413-example
+training set, everything else held constant. real conflict-class aspects
+were only 2.4% of the real training set (62/2588); synthetic added 72 more,
+specifically targeting the sentiment-judgment gap Session 4 surfaced.
+
+  r8+MLP           (n=304): aspect_f1=0.780  sentiment_acc=0.810  joint_f1=0.632  parse_rate=0.993
+  r8+MLP+synth     (n=304): aspect_f1=0.783  sentiment_acc=0.813  joint_f1=0.636  parse_rate=1.000
+
+As a fraction of Sonnet's ceiling: joint_f1 92.8% (was 92.0%), aspect_f1
+99.7% (was 99.3%), sentiment_acc 93.0% (was 92.7%), parse_rate now
+literally 100% -- fractionally *higher* than Sonnet's own 99.7% on this
+domain.
+
+**Finding, and it's a repeat of Session 4's pattern -- worth taking
+seriously rather than explaining away.** This intervention was specifically
+designed to fix the sentiment_acc gap (72 extra conflict examples, plus
+sarcasm/neutral/understatement categories chosen exactly because Session 4
+didn't move that number). It barely moved: 0.810 -> 0.813, a 0.35% relative
+gain -- smaller than the improvement from adding MLP target modules in
+Session 4, and this time with 20% more training data and 25 more minutes
+of compute. Two different interventions in a row (more model capacity,
+then targeted data) have both failed to meaningfully close sentiment_acc's
+gap to Sonnet (93.0% of ceiling now vs 91.9% in Session 3 -- a ~1 point
+total movement across two full sessions of work aimed directly at it).
+
+**Working conclusion for Session 7's writeup:** the sentiment_acc gap
+increasingly looks like a real capability ceiling of this 1.7B base model
+on ambiguous-sentiment judgment (sarcasm, mixed cues, subtle neutrality),
+not a data-quantity or adapter-capacity problem that this project's scale
+of intervention can close. That's a legitimate, useful conclusion for the
+final report -- it's a specific, falsifiable claim (backed by two
+independent negative results) about *where* a 1.7B model's limits are
+relative to a frontier model on this task, which is more informative than
+if everything had just gotten better.
+
+**What actually did move, unexpectedly:** parse_rate hit a perfect 1.0
+(0/304 unparseable), up from 0.993. Possible explanation: the synthetic
+examples are somewhat more templated/formulaic in structure than the real
+SemEval sentences (each written to a fairly narrow category prompt), which
+may have reinforced output-formatting consistency more than it improved
+semantic sentiment reasoning -- consistent with the aspect_f1/parse_rate
+axis moving while sentiment_acc doesn't. Worth checking in Session 6's
+error analysis whether the *kinds* of sentiment errors changed at all,
+even if the aggregate rate didn't.
+
+**Self-labeled synthetic data caveat:** these gold labels were assigned by
+Claude Sonnet 5 itself, not independently verified the way the real
+SemEval annotations were (see the Session 1 human-baseline entry above for
+what that verification process even looks like). A model grading its own
+homework on exactly the judgment calls we're trying to teach is a real
+limitation -- if Sonnet's own conflict/sarcasm labels have systematic
+blind spots, this data could reinforce rather than correct them. Manual
+spot-checking a sample of the 290 synthetic examples would be worth doing
+before trusting this dataset for anything beyond this one experiment.

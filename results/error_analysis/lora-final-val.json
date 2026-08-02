@@ -1,0 +1,378 @@
+{
+  "predictions_file": "results/predictions/lora-r8-mlp-synth-final-eval_restaurants_val.jsonl",
+  "gold_file": "data/processed/restaurants_val.jsonl",
+  "n_examples": 302,
+  "total_errors": 328,
+  "category_counts": {
+    "missed_aspect": 145,
+    "hallucinated_aspect": 103,
+    "wrong_polarity:neutral->positive": 25,
+    "wrong_polarity:neutral->negative": 13,
+    "wrong_polarity:negative->neutral": 12,
+    "wrong_polarity:conflict->positive": 9,
+    "wrong_polarity:positive->neutral": 7,
+    "wrong_polarity:negative->positive": 5,
+    "wrong_polarity:conflict->negative": 4,
+    "wrong_polarity:neutral->conflict": 2,
+    "wrong_polarity:positive->negative": 2,
+    "unparseable_output": 1
+  },
+  "samples": {
+    "wrong_polarity:negative->positive": [
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "term": "music",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-395",
+        "text": "Prices are higher to dine in and their chicken tikka marsala is quite good.",
+        "term": "Prices",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-500",
+        "text": "Food was very good as well, considering that we tried the budget selection (though I wish the pork belly that I ordered was roasted a bit longer, so that fat was more of a melt-in-your-mouth experience).",
+        "term": "pork belly",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1907",
+        "text": "While most people can attest to spending over $50 on drinks in New York bars and hardly feeling a thing, the drinks here are plentiful and unique.",
+        "term": "drinks",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1606",
+        "text": "The steak was excellent and one of the best I have had (I tasted the butter intitally but in no way did it overwhelm the flavor of the meat).",
+        "term": "butter",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      }
+    ],
+    "wrong_polarity:negative->neutral": [
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "term": "bottle minimun",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1659",
+        "text": "The space is nice but when we order our drink we were in for a surprise.",
+        "term": "drink",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-613",
+        "text": "Make reservations but expect to be delayed 15-20 minutes as the hosting staff was having difficulty seating guests who arrived with a reservation because they probably had a lot of walk ins being so close to Time Square.",
+        "term": "reservations",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-148",
+        "text": "A narrow corridor leads to a tiny space where there are three tiny white tiled counters, a great deal of mess (stacks of bottles, cans) and a small counter holding 12-14 entrees.",
+        "term": "corridor",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-148",
+        "text": "A narrow corridor leads to a tiny space where there are three tiny white tiled counters, a great deal of mess (stacks of bottles, cans) and a small counter holding 12-14 entrees.",
+        "term": "space",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      }
+    ],
+    "hallucinated_aspect": [
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "pred_term": "system",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "pred_term": "bottle minimun",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1102",
+        "text": "Just don't take the seat between the bar and the back half of the restaurant, i saw a woman get nudged 40times sitting there.",
+        "pred_term": "back half of the restaurant",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1047",
+        "text": "I was in love with Pongsri on 48th, but compared to Suan it is slow in service and overpriced.",
+        "pred_term": "price",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-889",
+        "text": "Admittedly, this is not the place for gigantic pieces of fish overflowing the plate (and thank goodness, in my opinion) but for simple, elegant sushi there is no better place in New York or anywhere in the US.",
+        "pred_term": "pieces of fish",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:neutral->negative": [
+      {
+        "id": "restaurants-1373",
+        "text": "Its not curry in a slurry crap, and regular run of the mill food.",
+        "term": "curry",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1373",
+        "text": "Its not curry in a slurry crap, and regular run of the mill food.",
+        "term": "food",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1131",
+        "text": "Service is average.",
+        "term": "Service",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-416",
+        "text": "Oh yes, and they lie on the phone, claiming they have seating in the garden, then of course the seats are not available.",
+        "term": "seats",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1358",
+        "text": "If you are someone who appreciates the same things but hope to have food to spare or share, Kai may not be the best option.",
+        "term": "food",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:neutral->positive": [
+      {
+        "id": "restaurants-1064",
+        "text": "We were fast to order the appetizer platter since we were very hungry.",
+        "term": "appetizer platter",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1623",
+        "text": "this is the best secret place in midtown', I heard that from the bartender, after having brilliant food ( try steak with portobello mushrooms) and drinks on the bar last Tuesday.",
+        "term": "bar",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-210",
+        "text": "overall, a solid restaurant and at less than $40pp (including wine), a solid deal as well.",
+        "term": "wine",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-631",
+        "text": "If it's just a quick martini at the bar (which I recommend Jeffery's) or a mind blowing Roast Chicken, go to Village!",
+        "term": "martini",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-631",
+        "text": "If it's just a quick martini at the bar (which I recommend Jeffery's) or a mind blowing Roast Chicken, go to Village!",
+        "term": "bar",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      }
+    ],
+    "missed_aspect": [
+      {
+        "id": "restaurants-1623",
+        "text": "this is the best secret place in midtown', I heard that from the bartender, after having brilliant food ( try steak with portobello mushrooms) and drinks on the bar last Tuesday.",
+        "term": "bartender",
+        "gold_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1623",
+        "text": "this is the best secret place in midtown', I heard that from the bartender, after having brilliant food ( try steak with portobello mushrooms) and drinks on the bar last Tuesday.",
+        "term": "steak with portobello mushrooms",
+        "gold_polarity": "positive"
+      },
+      {
+        "id": "restaurants-889",
+        "text": "Admittedly, this is not the place for gigantic pieces of fish overflowing the plate (and thank goodness, in my opinion) but for simple, elegant sushi there is no better place in New York or anywhere in the US.",
+        "term": "fish",
+        "gold_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1839",
+        "text": "I fell in love with the egg noodles in the beef broth with shrimp dumplings and slices of BBQ roast pork.",
+        "term": "egg noodles in the beef broth with shrimp dumplings and slices of BBQ roast pork",
+        "gold_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1189",
+        "text": "Food was good and the view of the new york city skiline was terrific even on a foggy rainy day like that of when I went.",
+        "term": "view",
+        "gold_polarity": "positive"
+      }
+    ],
+    "wrong_polarity:conflict->positive": [
+      {
+        "id": "restaurants-1805",
+        "text": "The staff has been nice, but they seemed really stressed and the unisex bathroom needs to be cleaned more often.",
+        "term": "staff",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-79",
+        "text": "An oasis of refinement:  Food, though somewhat uneven, often reaches the pinnacles of new American fine cuisine - chef's passion (and kitchen's precise execution) is most evident in the fish dishes and soups.",
+        "term": "Food",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-508",
+        "text": "You can get an excellent meal at most of the many Indian restaurants on nearby Lexington Avenue for the cost of one the dainty dishes here.",
+        "term": "cost",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-332",
+        "text": "The Italian food has flavor (that can be sort of surprising on the UES), and the service turns from a nightmare to attentive,they sort of remind me of the NY Yankees of the late 90's, no matter how bad it look, you knew that there was a rally just around the corner...",
+        "term": "service",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1972",
+        "text": "Sake collection was excellent (Try Nanbu Bijin), but pricy.",
+        "term": "Sake collection",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      }
+    ],
+    "wrong_polarity:neutral->conflict": [
+      {
+        "id": "restaurants-1792",
+        "text": "Seating is ok even though sometimes there's alot of people.",
+        "term": "Seating",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-824",
+        "text": "The menu choices are similar but the taste lacked more flavor than it looked.",
+        "term": "menu choices",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      }
+    ],
+    "wrong_polarity:positive->neutral": [
+      {
+        "id": "restaurants-1802",
+        "text": "Get the tuna of gari.",
+        "term": "tuna",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1407",
+        "text": "Obv caviar is top of the line but the rest of the menu is so diverse it gives you a chance to taste so manydifferent varietys.",
+        "term": "menu",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1520",
+        "text": "The menu consisted of standard brassiere food, better then places like Balthazar etc.",
+        "term": "menu",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1520",
+        "text": "The menu consisted of standard brassiere food, better then places like Balthazar etc.",
+        "term": "brassiere food",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-150",
+        "text": "Succulent steaks cooked precisely to your desired 'doneness' accompanied by salads and sides that don't look like leafy road kill.",
+        "term": "salads",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      }
+    ],
+    "wrong_polarity:conflict->negative": [
+      {
+        "id": "restaurants-1304",
+        "text": "Even with the prix fixe pricing, this restaurant is not worth it.",
+        "term": "prix fixe pricing",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1070",
+        "text": "Maybe I say so because it looked promising for people who like artery-clogging jewish deli food, but turns out to be poorly run and awful.",
+        "term": "jewish deli food",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-340",
+        "text": "The atmosphere is noisy and the waiters are literally walking around doing things as fast as they can.",
+        "term": "waiters",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-497",
+        "text": "Still, any quibbles about the bill were off-set by the pour-your-own measures of liquers which were courtesey of the house...",
+        "term": "bill",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:positive->negative": [
+      {
+        "id": "restaurants-212",
+        "text": "Based on the reviews for dinner, this is a place I would reconsider revisiting for that, but definitely not for Dim Sum again.",
+        "term": "dinner",
+        "gold_polarity": "positive",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1543",
+        "text": "The decor in this place is very diner-ish and the kind of place you expect in the East Village - not romantic, just simple, small and sparse.",
+        "term": "decor",
+        "gold_polarity": "positive",
+        "pred_polarity": "negative"
+      }
+    ],
+    "unparseable_output": [
+      {
+        "id": "restaurants-1539",
+        "text": "The staff is very kind and well trained, they're fast, they are always prompt to jump behind the bar and fix drinks, they know details of every item in the menu and make excelent recomendations.",
+        "raw_output": "[{\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}"
+      }
+    ]
+  },
+  "wrong_polarity_llm_summary": "**Implied/indirect sentiment requiring inference beyond surface lexical cues.** Many errors involve the model failing to read implicit narrative cues that carry sentiment without explicit sentiment words. Example 1 (waitress only appearing \"twice\" implies neglect), example 9 (a \"great deal of mess\" near the counter implies negative context), and example 10 (recommending reservations implies the place is busy/popular, a neutral-to-practical note misread as positive) show the model missing implied evaluation from context/situation description rather than adjectives.\n\n**Negation or backhanded phrasing (litotes/mitigation) misread as straightforwardly negative or positive.** Cases like 6 (\"not curry in a slurry crap\" = neutral/mildly positive framing misread as negative), 13 (\"don't look like leafy road kill\" = positive praise via negation misread as neutral), 11 (butter mentioned but explicitly said not to overwhelm, still gold negative but predicted positive), and 14 (\"not consistently excellent -- just decent\" = neutral hedge misread as negative) show the model struggling with double negatives/mitigating clauses that soften or flip the naive polarity of the words used.\n\n**Comparative or backhanded-compliment structures where the model latches onto one clause's polarity.** Examples 2 (drinks praised as \"plentiful and unique\" but the overall context frames them negatively as not worth the price), 8 (\"better than X\" comparative implying positive, predicted neutral), and 12 (positive framing about dinner undercut by contrast with Dim Sum, model picks the negative comparison target) show the model failing to resolve which clause dominates the overall sentiment in contrastive/comparative constructions.\n\n**Mild or hedged descriptions treated as stronger polarity than warranted.** Examples 3, 4, 7, and 15 show neutral/mild statements (familiarity with staff, ambient descriptions, minor complaints softened by reassurance) being pushed to a stronger predicted polarity (positive or negative) than the gold neutral label, suggesting the model over-weights isolated cues (\"clueless,\" \"weird,\" repeated visits) while ignoring softening context that keeps overall sentiment neutral."
+}

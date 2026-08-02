@@ -1,0 +1,302 @@
+{"id": "restaurants-745", "raw_output": "[{\"term\": \"fish\", \"polarity\": \"positive\"}, {\"term\": \"ambiance\", \"polarity\": \"positive\"}, {\"term\": \"location\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-403", "raw_output": "[{\"term\": \"music\", \"polarity\": \"negative\"}, {\"term\": \"bottle minimun\", \"polarity\": \"negative\"}, {\"term\": \"minimun\", \"polarity\": \"negative\"}, {\"term\": \"bottle\", \"polarity\": \"negative\"}, {\"term\": \"music\", \"polarity\": \"positive\"}, {\"term\": \"minimun\", \"polarity\": \"positive\"}, {\"term\": \"bottle\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1373", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"curry\", \"polarity\": \"negative\"}, {\"term\": \"run of the mill\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1406", "raw_output": "[{\"term\": \"prices\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1102", "raw_output": "[{\"term\": \"seat\", \"polarity\": \"negative\"}, {\"term\": \"bar\", \"polarity\": \"neutral\"}, {\"term\": \"back half of the restaurant\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1064", "raw_output": "[{\"term\": \"appetizer platter\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-3", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"perks\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1976", "raw_output": "[{\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"crab-cake eggs benedict\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1541", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"flavoring\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-521", "raw_output": "[{\"term\": \"outdoor atmosphere\", \"polarity\": \"positive\"}, {\"term\": \"sitting\", \"polarity\": \"positive\"}, {\"term\": \"sidewalk\", \"polarity\": \"positive\"}, {\"term\": \"6th avenue\", \"polarity\": \"positive\"}, {\"term\": \"cool evening\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1678", "raw_output": "[{\"term\": \"waiters\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"bill\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1923", "raw_output": "[{\"term\": \"toasting\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1837", "raw_output": "[{\"term\": \"feel\", \"polarity\": \"positive\"}, {\"term\": \"zen\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1556", "raw_output": "[{\"term\": \"place\", \"polarity\": \"positive\"}, {\"term\": \"sleek\", \"polarity\": \"positive\"}, {\"term\": \"modern\", \"polarity\": \"positive\"}, {\"term\": \"playfull\", \"polarity\": \"positive\"}, {\"term\": \"return\", \"polarity\": \"positive\"}, {\"term\": \"frequently\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1047", "raw_output": "[{\"term\": \"service\", \"polarity\": \"negative\"}, {\"term\": \"price\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1241", "raw_output": "[{\"term\": \"Service\", \"polarity\": \"positive\"}, {\"term\": \"takeout\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-893", "raw_output": "[{\"term\": \"menu\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1623", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"drinks\", \"polarity\": \"positive\"}, {\"term\": \"bar\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-707", "raw_output": "[{\"term\": \"shrimp appetizers\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-889", "raw_output": "[{\"term\": \"sushi\", \"polarity\": \"positive\"}, {\"term\": \"fish\", \"polarity\": \"negative\"}, {\"term\": \"plate\", \"polarity\": \"negative\"}, {\"term\": \"sushi\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1839", "raw_output": "[{\"term\": \"egg noodles\", \"polarity\": \"positive\"}, {\"term\": \"beef broth\", \"polarity\": \"positive\"}, {\"term\": \"shrimp dumplings\", \"polarity\": \"positive\"}, {\"term\": \"slices of BBQ roast pork\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-222", "raw_output": "[{\"term\": \"Staff\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-78", "raw_output": "[{\"term\": \"tuna tartar appetizer\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1566", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1189", "raw_output": "[{\"term\": \"Food\", \"polarity\": \"positive\"}, {\"term\": \"view of the new york city skiline\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1805", "raw_output": "[{\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"bathroom\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1591", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1659", "raw_output": "[{\"term\": \"space\", \"polarity\": \"positive\"}, {\"term\": \"drink\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-56", "raw_output": "[{\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\":"}
+{"id": "restaurants-678", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"herbs\", \"polarity\": \"positive\"}, {\"term\": \"tomatoes\", \"polarity\": \"positive\"}, {\"term\": \"balance\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1677", "raw_output": "[{\"term\": \"Pizza\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"backyard dining area\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1391", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"waiters\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-818", "raw_output": "[{\"term\": \"sea bass\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1852", "raw_output": "[{\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"resturant\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1313", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-719", "raw_output": "[{\"term\": \"corned beef sandwich\", \"polarity\": \"positive\"}, {\"term\": \"corned beef sandwich\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-571", "raw_output": "[{\"term\": \"meal\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1938", "raw_output": "[{\"term\": \"Thai place\", \"polarity\": \"positive\"}, {\"term\": \"Jazz\", \"polarity\": \"positive\"}, {\"term\": \"NYC\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1672", "raw_output": "[{\"term\": \"ingredients\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-672", "raw_output": "[{\"term\": \"Beef noodle soup\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-816", "raw_output": "[{\"term\": \"bill\", \"polarity\": \"negative\"}, {\"term\": \"price\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-395", "raw_output": "[{\"term\": \"Prices\", \"polarity\": \"positive\"}, {\"term\": \"chicken tikka marsala\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1830", "raw_output": "[{\"term\": \"place\", \"polarity\": \"positive\"}, {\"term\": \"conversation\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-48", "raw_output": "[{\"term\": \"menu\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-456", "raw_output": "[{\"term\": \"pre-theater menu\", \"polarity\": \"positive\"}, {\"term\": \"chevre\", \"polarity\": \"positive\"}, {\"term\": \"steak frites\", \"polarity\": \"positive\"}, {\"term\": \"creme brulee\", \"polarity\": \"positive\"}, {\"term\": \"roasted tomato soup\", \"polarity\": \"positive\"}, {\"term\": \"steak\", \"polarity\": \"positive\"}, {\"term\": \"soup\", \"polarity\": \"positive\"}, {\"term\": \"frites\", \"polarity\": \"positive\"}, {\"term\": \"theater\", \"polarity\": \"positive\"}, {\"term\": \"menu\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"$19.95\", \"polarity\": \"positive\"}, {\"term\": \"chevre\", \"polarity\": \"positive\"}, {\"term\": \"theater\", \"polarity\": \"positive\"}, {\"term\": \"theater\", \"polarity\": \"positive\"}, {\"term\": \"theater\", \"polarity\": \"positive\"}, {\"term\": \"theater\", \"polarity\": \"positive\"}, {\"term\": \"theater"}
+{"id": "restaurants-1935", "raw_output": "[{\"term\": \"cheeseburgers\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-625", "raw_output": "[{\"term\": \"rice\", \"polarity\": \"negative\"}, {\"term\": \"cooking\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-716", "raw_output": "[{\"term\": \"parmesean porcini souffle\", \"polarity\": \"positive\"}, {\"term\": \"lamb\", \"polarity\": \"positive\"}, {\"term\": \"balsamic vinegar\", \"polarity\": \"positive\"}, {\"term\": \"souffle\", \"polarity\": \"positive\"}, {\"term\": \"glazed\", \"polarity\": \"positive\"}, {\"term\": \"porcini\", \"polarity\": \"positive\"}, {\"term\": \"served with\", \"polarity\": \"neutral\"}, {\"term\": \"wine\", \"polarity\": \"neutral\"}, {\"term\": \"table\", \"polarity\": \"neutral\"}, {\"term\": \"served\", \"polarity\": \"neutral\"}, {\"term\": \"bread\", \"polarity\": \"neutral\"}, {\"term\": \"cheese\", \"polarity\": \"neutral\"}, {\"term\": \"bread\", \"polarity\": \"neutral\"}, {\"term\": \"sauce\", \"polarity\": \"neutral\"}, {\"term\": \"sauce\", \"polarity\": \"neutral\"}, {\"term\": \"sauce\", \"polarity\": \"neutral\"}, {\"term\": \"sauce\", \"polarity\": \"neutral\"}, {\"term\":"}
+{"id": "restaurants-942", "raw_output": "[{\"term\": \"staff\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-408", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"pork\", \"polarity\": \"positive\"}, {\"term\": \"fish\", \"polarity\": \"positive\"}, {\"term\": \"chicken\", \"polarity\": \"positive\"}, {\"term\": \"lamb\", \"polarity\": \"positive\"}, {\"term\": \"vegetables\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-455", "raw_output": "[{\"term\": \"Filet Mignon\", \"polarity\": \"positive\"}, {\"term\": \"garlic mash\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-963", "raw_output": "[{\"term\": \"menu\", \"polarity\": \"positive\"}, {\"term\": \"Spice\", \"polarity\": \"positive\"}, {\"term\": \"wallet\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-79", "raw_output": "[{\"term\": \"Food\", \"polarity\": \"positive\"}, {\"term\": \"chef's passion\", \"polarity\": \"positive\"}, {\"term\": \"kitchen's precise execution\", \"polarity\": \"positive\"}, {\"term\": \"fish dishes\", \"polarity\": \"positive\"}, {\"term\": \"soups\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-783", "raw_output": "[{\"term\": \"coats\", \"polarity\": \"neutral\"}, {\"term\": \"front doors\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-221", "raw_output": "[{\"term\": \"menu\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1989", "raw_output": "[{\"term\": \"crowded\", \"polarity\": \"negative\"}, {\"term\": \"popular\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1977", "raw_output": "[{\"term\": \"decor\", \"polarity\": \"positive\"}, {\"term\": \"bathrooms\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1821", "raw_output": "[{\"term\": \"Service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-508", "raw_output": "[{\"term\": \"meal\", \"polarity\": \"positive\"}, {\"term\": \"cost\", \"polarity\": \"positive\"}, {\"term\": \"dish\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1892", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-843", "raw_output": "[{\"term\": \"vegetable samosa\", \"polarity\": \"positive\"}, {\"term\": \"malai tikka wrap\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-680", "raw_output": "[{\"term\": \"shredded cheese\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-367", "raw_output": "[{\"term\": \"server\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-50", "raw_output": "[{\"term\": \"sake martini\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-844", "raw_output": "[{\"term\": \"chef\", \"polarity\": \"negative\"}, {\"term\": \"waitress\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-362", "raw_output": "[{\"term\": \"sushi\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-332", "raw_output": "[{\"term\": \"Italian food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"Italian food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"Italian food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"Italian food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \""}
+{"id": "restaurants-1658", "raw_output": "[{\"term\": \"Thai food\", \"polarity\": \"positive\"}, {\"term\": \"delivery\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-316", "raw_output": "[{\"term\": \"chu chu curry\", \"polarity\": \"neutral\"}, {\"term\": \"pad thai chicken\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1271", "raw_output": "[{\"term\": \"prices\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1656", "raw_output": "[{\"term\": \"deli\", \"polarity\": \"positive\"}, {\"term\": \"Katz's Deli\", \"polarity\": \"positive\"}, {\"term\": \"Lower East Side\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1146", "raw_output": "[{\"term\": \"service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-724", "raw_output": "[{\"term\": \"olive cream cheese\", \"polarity\": \"positive\"}, {\"term\": \"lox spread\", \"polarity\": \"positive\"}, {\"term\": \"whole wheat everything bagel\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-210", "raw_output": "[{\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"wine\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"pol"}
+{"id": "restaurants-1365", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1670", "raw_output": "[{\"term\": \"Dessert\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1825", "raw_output": "[{\"term\": \"atmosphere\", \"polarity\": \"positive\"}, {\"term\": \"music\", \"polarity\": \"positive\"}, {\"term\": \"dress code\", \"polarity\": \"positive\"}, {\"term\": \"Friday\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-430", "raw_output": "[{\"term\": \"secret back room\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-732", "raw_output": "[{\"term\": \"dishes\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1600", "raw_output": "[{\"term\": \"Service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-746", "raw_output": "[{\"term\": \"outdoor seating\", \"polarity\": \"positive\"}, {\"term\": \"seating\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-631", "raw_output": "[{\"term\": \"martini\", \"polarity\": \"positive\"}, {\"term\": \"Roast Chicken\", \"polarity\": \"positive\"}, {\"term\": \"bar\", \"polarity\": \"positive\"}, {\"term\": \"Village\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-85", "raw_output": "[{\"term\": \"pizzas\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-261", "raw_output": "[{\"term\": \"sushi\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-880", "raw_output": "[{\"term\": \"staff\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-303", "raw_output": "[{\"term\": \"view\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1131", "raw_output": "[{\"term\": \"Service\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1192", "raw_output": "[{\"term\": \"pizza\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1792", "raw_output": "[{\"term\": \"Seating\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-73", "raw_output": "[{\"term\": \"check\", \"polarity\": \"negative\"}, {\"term\": \"serve\", \"polarity\": \"neutral\"}, {\"term\": \"service\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1117", "raw_output": "[{\"term\": \"beers\", \"polarity\": \"positive\"}, {\"term\": \"wines\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-305", "raw_output": "[{\"term\": \"ambiance\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1415", "raw_output": "[{\"term\": \"Tuna roll\", \"polarity\": \"positive\"}, {\"term\": \"price range\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1669", "raw_output": "[{\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1802", "raw_output": "[{\"term\": \"tuna\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1575", "raw_output": "[{\"term\": \"chicken\", \"polarity\": \"positive\"}, {\"term\": \"beef\", \"polarity\": \"positive\"}, {\"term\": \"lamb\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1148", "raw_output": "[{\"term\": \"bagels\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-875", "raw_output": "[{\"term\": \"dish\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1445", "raw_output": "[{\"term\": \"Service\", \"polarity\": \"positive\"}, {\"term\": \"decor\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1129", "raw_output": "[{\"term\": \"service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-904", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1791", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-536", "raw_output": "[{\"term\": \"Octopus salad\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1304", "raw_output": "[{\"term\": \"prix fixe pricing\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-267", "raw_output": "[{\"term\": \"Fish\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-683", "raw_output": "[{\"term\": \"reservation\", \"polarity\": \"positive\"}, {\"term\": \"notice\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-7", "raw_output": "[{\"term\": \"mayonnaise\", \"polarity\": \"negative\"}, {\"term\": \"ingredients\", \"polarity\": \"negative\"}, {\"term\": \"bacon\", \"polarity\": \"negative\"}, {\"term\": \"temperature\", \"polarity\": \"negative\"}, {\"term\": \"toast\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-90", "raw_output": "[{\"term\": \"Italian decor\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-566", "raw_output": "[{\"term\": \"wine\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1695", "raw_output": "[{\"term\": \"Service\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1299", "raw_output": "[{\"term\": \"coat check girls\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1966", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-104", "raw_output": "[{\"term\": \"taste\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1832", "raw_output": "[{\"term\": \"place\", \"polarity\": \"positive\"}, {\"term\": \"bites to eat\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1784", "raw_output": "[{\"term\": \"waiters\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1035", "raw_output": "[{\"term\": \"grilled cheese\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-540", "raw_output": "[{\"term\": \"decor\", \"polarity\": \"positive\"}, {\"term\": \"dining hall\", \"polarity\": \"positive\"}, {\"term\": \"boths\", \"polarity\": \"positive\"}, {\"term\": \"private\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1298", "raw_output": "[{\"term\": \"tuna\", \"polarity\": \"positive\"}, {\"term\": \"potatoes\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1407", "raw_output": "[{\"term\": \"menu\", \"polarity\": \"neutral\"}, {\"term\": \"caviar\", \"polarity\": \"positive\"}, {\"term\": \"varietys\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-416", "raw_output": "[{\"term\": \"seating\", \"polarity\": \"negative\"}, {\"term\": \"phone\", \"polarity\": \"negative\"}, {\"term\": \"garden\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-702", "raw_output": "[{\"term\": \"service\", \"polarity\": \"conflict\"}, {\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1469", "raw_output": "[{\"term\": \"rice\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-431", "raw_output": "[{\"term\": \"bar\", \"polarity\": \"positive\"}, {\"term\": \"Angel's Share\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1238", "raw_output": "[{\"term\": \"people\", \"polarity\": \"negative\"}, {\"term\": \"bit\", \"polarity\": \"neutral\"}, {\"term\": \"new york\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-577", "raw_output": "[{\"term\": \"bacon\", \"polarity\": \"negative\"}, {\"term\": \"platter\", \"polarity\": \"negative\"}, {\"term\": \"sandwiches\", \"polarity\": \"negative\"}, {\"term\": \"take out place\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-557", "raw_output": "[{\"term\": \"sushi\", \"polarity\": \"positive\"}, {\"term\": \"sushi\", \"polarity\": \"positive\"}, {\"term\": \"sushi\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1972", "raw_output": "[{\"term\": \"Sake collection\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1831", "raw_output": "[{\"term\": \"Reuben sandwich\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1520", "raw_output": "[{\"term\": \"menu\", \"polarity\": \"neutral\"}, {\"term\": \"food\", \"polarity\": \"neutral\"}, {\"term\": \"brassiere\", \"polarity\": \"neutral\"}, {\"term\": \"Balthazar\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-219", "raw_output": "[{\"term\": \"Grilled Chicken special\", \"polarity\": \"positive\"}, {\"term\": \"Edamame Puree\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-236", "raw_output": "[{\"term\": \"Spicy Fried Clam Rolls\", \"polarity\": \"positive\"}, {\"term\": \"Spider Rolls\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1959", "raw_output": "[{\"term\": \"appetizers\", \"polarity\": \"positive\"}, {\"term\": \"shrimp fritters\", \"polarity\": \"positive\"}, {\"term\": \"dumplings\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-275", "raw_output": "[{\"term\": \"dim sum\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-212", "raw_output": "[{\"term\": \"dinner\", \"polarity\": \"negative\"}, {\"term\": \"Dim Sum\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1358", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-613", "raw_output": "[{\"term\": \"reservations\", \"polarity\": \"conflict\"}, {\"term\": \"staff\", \"polarity\": \"conflict\"}, {\"term\": \"guests\", \"polarity\": \"conflict\"}, {\"term\": \"Time Square\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1135", "raw_output": "[{\"term\": \"pizza place\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1367", "raw_output": "[{\"term\": \"eggplant parmesan\", \"polarity\": \"positive\"}, {\"term\": \"baked ziti with meatsauce\", \"polarity\": \"positive\"}, {\"term\": \"meatsauce\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-16", "raw_output": "[{\"term\": \"dishes\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1833", "raw_output": "[{\"term\": \"strawberry daiquiries\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1339", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"pol"}
+{"id": "restaurants-1252", "raw_output": "[{\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"group sizes\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-619", "raw_output": "[{\"term\": \"ingredients\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"crust\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1440", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"rice\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1112", "raw_output": "[{\"term\": \"scallops\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1742", "raw_output": "[{\"term\": \"tastes\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1814", "raw_output": "[{\"term\": \"ambiance\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-583", "raw_output": "[{\"term\": \"kalbi\", \"polarity\": \"positive\"}, {\"term\": \"nebbiolo\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-756", "raw_output": "[{\"term\": \"Chinese food takeout\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-500", "raw_output": "[{\"term\": \"Food\", \"polarity\": \"positive\"}, {\"term\": \"pork belly\", \"polarity\": \"positive\"}, {\"term\": \"budget selection\", \"polarity\": \"neutral\"}, {\"term\": \"fat\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1611", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"drinks\", \"polarity\": \"positive\"}, {\"term\": \"atmosphere\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-714", "raw_output": "[{\"term\": \"selection\", \"polarity\": \"positive\"}, {\"term\": \"wines\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"decor\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-271", "raw_output": "[{\"term\": \"presentation\", \"polarity\": \"positive\"}, {\"term\": \"style\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1585", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"atmosphere\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1036", "raw_output": "[{\"term\": \"red sliding doors\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-436", "raw_output": "[{\"term\": \"theater\", \"polarity\": \"positive\"}, {\"term\": \"meal\", \"polarity\": \"positive\"}, {\"term\": \"room\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1101", "raw_output": "[{\"term\": \"dishes\", \"polarity\": \"positive\"}, {\"term\": \"accessibility\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-150", "raw_output": "[{\"term\": \"steaks\", \"polarity\": \"positive\"}, {\"term\": \"sides\", \"polarity\": \"positive\"}, {\"term\": \"salads\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-204", "raw_output": "[{\"term\": \"lunch\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1153", "raw_output": "[{\"term\": \"location\", \"polarity\": \"positive\"}, {\"term\": \"meal\", \"polarity\": \"positive\"}, {\"term\": \"time\", \"polarity\": \"positive\"}, {\"term\": \"talk\", \"polarity\": \"positive\"}, {\"term\": \"time\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1272", "raw_output": "[{\"term\": \"cuisine\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-938", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"ambience\", \"polarity\": \"positive\"}, {\"term\": \"Michelin rating\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-19", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"atmosphere\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-148", "raw_output": "[{\"term\": \"corridor\", \"polarity\": \"conflict\"}, {\"term\": \"space\", \"polarity\": \"conflict\"}, {\"term\": \"tiled counters\", \"polarity\": \"conflict\"}, {\"term\": \"bottles\", \"polarity\": \"conflict\"}, {\"term\": \"cans\", \"polarity\": \"conflict\"}, {\"term\": \"counter\", \"polarity\": \"conflict\"}, {\"term\": \"entrees\", \"polarity\": \"conflict\"}, {\"term\": \"stacks\", \"polarity\": \"conflict\"}, {\"term\": \"counter\", \"polarity\": \"conflict\"}, {\"term\": \"12-14\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1539", "raw_output": "[{\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"polarity\": \"positive\"}, {\"term\": \"staff\", \"pol"}
+{"id": "restaurants-1592", "raw_output": "[{\"term\": \"wines by the glass\", \"polarity\": \"positive\"}, {\"term\": \"wine\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"king\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-936", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-614", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"dishes\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1321", "raw_output": "[{\"term\": \"SHOWS\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1745", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-268", "raw_output": "[{\"term\": \"dining room\", \"polarity\": \"positive\"}, {\"term\": \"high ceiling\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1873", "raw_output": "[{\"term\": \"cuisine\", \"polarity\": \"positive\"}, {\"term\": \"fork\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"fork\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\":"}
+{"id": "restaurants-1646", "raw_output": "[{\"term\": \"Decor\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-488", "raw_output": "[{\"term\": \"Chef Jason Narone\", \"polarity\": \"negative\"}, {\"term\": \"Sterling track record\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-643", "raw_output": "[{\"term\": \"nigiri\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1991", "raw_output": "[{\"term\": \"dinner\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1371", "raw_output": "[{\"term\": \"cheese fondue\", \"polarity\": \"positive\"}, {\"term\": \"apples\", \"polarity\": \"positive\"}, {\"term\": \"kielbasa\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-418", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"place\", \"polarity\": \"positive\"}, {\"term\": \"deal\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-534", "raw_output": "[{\"term\": \"fondue appetizer\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-647", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1070", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"deliver\", \"polarity\": \"negative\"}, {\"term\": \"people\", \"polarity\": \"neutral\"}, {\"term\": \"deliver\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"deliver\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"food"}
+{"id": "restaurants-1157", "raw_output": "[{\"term\": \"wine list\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1857", "raw_output": "[{\"term\": \"Food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1346", "raw_output": "[{\"term\": \"crab cakes\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-858", "raw_output": "[{\"term\": \"portions\", \"polarity\": \"negative\"}, {\"term\": \"main course\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-167", "raw_output": "[{\"term\": \"servers\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1268", "raw_output": "[{\"term\": \"dishes\", \"polarity\": \"positive\"}, {\"term\": \"noodles\", \"polarity\": \"positive\"}, {\"term\": \"ground beef\", \"polarity\": \"positive\"}, {\"term\": \"Tamarind duck\", \"polarity\": \"positive\"}, {\"term\": \"Thai flavors\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-81", "raw_output": "[{\"term\": \"Indian food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1217", "raw_output": "[{\"term\": \"lunch\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1185", "raw_output": "[{\"term\": \"atmosphere\", \"polarity\": \"negative\"}, {\"term\": \"bagel\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-504", "raw_output": "[{\"term\": \"bar\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1166", "raw_output": "[{\"term\": \"Indian dining experience\", \"polarity\": \"positive\"}, {\"term\": \"dollar\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-245", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"condiments\", \"polarity\": \"negative\"}, {\"term\": \"containers\", \"polarity\": \"negative\"}, {\"term\": \"manager\", \"polarity\": \"positive\"}, {\"term\": \"employees\", \"polarity\": \"negative\"}, {\"term\": \"condiments\", \"polarity\": \"negative\"}, {\"term\": \"containers\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-826", "raw_output": "[{\"term\": \"portions\", \"polarity\": \"positive\"}, {\"term\": \"appetizer\", \"polarity\": \"neutral\"}, {\"term\": \"entree\", \"polarity\": \"neutral\"}, {\"term\": \"split\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-481", "raw_output": "[{\"term\": \"fish\", \"polarity\": \"positive\"}, {\"term\": \"rice\", \"polarity\": \"positive\"}, {\"term\": \"seaweed\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1382", "raw_output": "[{\"term\": \"food\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-139", "raw_output": "[{\"term\": \"crawfish\", \"polarity\": \"positive\"}, {\"term\": \"mess\", \"polarity\": \"positive\"}, {\"term\": \"tasty\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1218", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"service\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-140", "raw_output": "[{\"term\": \"reservation\", \"polarity\": \"positive\"}, {\"term\": \"occasion\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-380", "raw_output": "[{\"term\": \"$20 entree range\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"atmosphere\", \"polarity\": \"positive\"}, {\"term\": \"New York City\", \"polarity\": \"neutral\"}, {\"term\": \"Sapphire\", \"polarity\": \"negative\"}, {\"term\": \"price\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-164", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1040", "raw_output": "[{\"term\": \"waitress\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-116", "raw_output": "[{\"term\": \"pizza\", \"polarity\": \"positive\"}, {\"term\": \"mozzarella\", \"polarity\": \"positive\"}, {\"term\": \"cheese\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-322", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"quality of food\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1087", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1029", "raw_output": "[{\"term\": \"dinner\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-976", "raw_output": "[{\"term\": \"rice\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1196", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"Breweries\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-102", "raw_output": "[{\"term\": \"kababs\", \"polarity\": \"positive\"}, {\"term\": \"kababs\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-117", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"place\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-642", "raw_output": "[{\"term\": \"back garden\", \"polarity\": \"positive\"}, {\"term\": \"outdoor seating\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1531", "raw_output": "[{\"term\": \"pizza\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1686", "raw_output": "[{\"term\": \"reservation\", \"polarity\": \"neutral\"}, {\"term\": \"table\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1110", "raw_output": "[{\"term\": \"reservation\", \"polarity\": \"conflict\"}, {\"term\": \"manager\", \"polarity\": \"positive\"}, {\"term\": \"wait\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1506", "raw_output": "[{\"term\": \"bagels\", \"polarity\": \"positive\"}, {\"term\": \"place\", \"polarity\": \"positive\"}, {\"term\": \"bagels\", \"polarity\": \"positive\"}, {\"term\": \"town\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1186", "raw_output": "[{\"term\": \"Service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-119", "raw_output": "[{\"term\": \"atmosphere\", \"polarity\": \"positive\"}, {\"term\": \"bistro-type vibe\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-445", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"specials\", \"polarity\": \"positive\"}, {\"term\": \"regular menu-fare\", \"polarity\": \"positive\"}, {\"term\": \"dishes\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-607", "raw_output": "[{\"term\": \"indian cuisine\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-388", "raw_output": "[{\"term\": \"garlic shrimp\", \"polarity\": \"positive\"}, {\"term\": \"okra (bindi)\", \"polarity\": \"positive\"}, {\"term\": \"lamb\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-317", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-996", "raw_output": "[{\"term\": \"oysters\", \"polarity\": \"positive\"}, {\"term\": \"beer\", \"polarity\": \"positive\"}, {\"term\": \"wine\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1471", "raw_output": "[{\"term\": \"people\", \"polarity\": \"positive\"}, {\"term\": \"serve\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1355", "raw_output": "[{\"term\": \"omakase\", \"polarity\": \"conflict\"}, {\"term\": \"BBQ-ed\", \"polarity\": \"negative\"}, {\"term\": \"tuna roll\", \"polarity\": \"negative\"}, {\"term\": \"not-so-fresh\", \"polarity\": \"negative\"}, {\"term\": \"nori\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1138", "raw_output": "[{\"term\": \"apple tarte tatin\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1604", "raw_output": "[{\"term\": \"table\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1496", "raw_output": "[{\"term\": \"flavors\", \"polarity\": \"positive\"}, {\"term\": \"inobtrusive\", \"polarity\": \"positive\"}, {\"term\": \"flavor\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1426", "raw_output": "[{\"term\": \"service\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1755", "raw_output": "[{\"term\": \"service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-584", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-931", "raw_output": "[{\"term\": \"back patio\", \"polarity\": \"positive\"}, {\"term\": \"music\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1607", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1605", "raw_output": "[{\"term\": \"pasta entre'es\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-543", "raw_output": "[{\"term\": \"lunch\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-799", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"negative\"}, {\"term\": \"price\", \"polarity\": \"neutral\"}, {\"term\": \"price\", \"polarity\": \"conflict\"}, {\"term\": \"front door\", \"polarity\": \"negative\"}, {\"term\": \"front door\", \"polarity\": \"neutral\"}, {\"term\": \"front door\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-4", "raw_output": "[{\"term\": \"orrechiete\", \"polarity\": \"positive\"}, {\"term\": \"sausage\", \"polarity\": \"positive\"}, {\"term\": \"chicken\", \"polarity\": \"positive\"}, {\"term\": \"waiters\", \"polarity\": \"positive\"}, {\"term\": \"dish\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-776", "raw_output": "[{\"term\": \"people\", \"polarity\": \"negative\"}, {\"term\": \"loud\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-337", "raw_output": "[{\"term\": \"spice\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1724", "raw_output": "[{\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"event date\", \"polarity\": \"negative\"}, {\"term\": \"chosing\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"reactivity\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"place"}
+{"id": "restaurants-1885", "raw_output": "[{\"term\": \"delivery guys\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-437", "raw_output": "[{\"term\": \"dinner\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-985", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1714", "raw_output": "[{\"term\": \"waiter\", \"polarity\": \"negative\"}, {\"term\": \"red wine\", \"polarity\": \"negative\"}, {\"term\": \"tea\", \"polarity\": \"negative\"}, {\"term\": \"seated\", \"polarity\": \"neutral\"}, {\"term\": \"date\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-832", "raw_output": "[{\"term\": \"People\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-340", "raw_output": "[{\"term\": \"waiters\", \"polarity\": \"negative\"}, {\"term\": \"atmosphere\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-484", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"service\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1543", "raw_output": "[{\"term\": \"decor\", \"polarity\": \"negative\"}, {\"term\": \"place\", \"polarity\": \"negative\"}, {\"term\": \"diner-ish\", \"polarity\": \"negative\"}, {\"term\": \"East Village\", \"polarity\": \"negative\"}, {\"term\": \"romantic\", \"polarity\": \"neutral\"}, {\"term\": \"simple\", \"polarity\": \"negative\"}, {\"term\": \"small\", \"polarity\": \"negative\"}, {\"term\": \"sparce\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1999", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}, {\"term\": \"value\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-30", "raw_output": "[{\"term\": \"broth\", \"polarity\": \"neutral\"}, {\"term\": \"noodles\", \"polarity\": \"neutral\"}, {\"term\": \"cup\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1107", "raw_output": "[{\"term\": \"service\", \"polarity\": \"negative\"}, {\"term\": \"table\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1335", "raw_output": "[{\"term\": \"Food\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-103", "raw_output": "[{\"term\": \"eating\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-200", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"name\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1127", "raw_output": "[{\"term\": \"Cheese plate\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1654", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"appetizers\", \"polarity\": \"positive\"}, {\"term\": \"main course\", \"polarity\": \"positive\"}, {\"term\": \"desserts\", \"polarity\": \"positive\"}, {\"term\": \"WOW\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-907", "raw_output": "[{\"term\": \"waitress\", \"polarity\": \"negative\"}, {\"term\": \"servants\", \"polarity\": \"negative\"}, {\"term\": \"time\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-154", "raw_output": "[{\"term\": \"wine by the glass\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-511", "raw_output": "[{\"term\": \"omelet\", \"polarity\": \"negative\"}, {\"term\": \"variety\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-947", "raw_output": "[{\"term\": \"snacking\", \"polarity\": \"negative\"}, {\"term\": \"dinner\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1716", "raw_output": "[{\"term\": \"food\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-375", "raw_output": "[{\"term\": \"lunch specials\", \"polarity\": \"negative\"}, {\"term\": \"chinese restaurant\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1840", "raw_output": "[{\"term\": \"table\", \"polarity\": \"neutral\"}, {\"term\": \"subway ride\", \"polarity\": \"neutral\"}, {\"term\": \"table\", \"polarity\": \"neutral\"}, {\"term\": \"rice congee soup people\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-287", "raw_output": "[{\"term\": \"food\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-918", "raw_output": "[{\"term\": \"drinks\", \"polarity\": \"positive\"}, {\"term\": \"appetizers\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1954", "raw_output": "[{\"term\": \"owner\", \"polarity\": \"positive\"}, {\"term\": \"family\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1701", "raw_output": "[{\"term\": \"service\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-392", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-509", "raw_output": "[{\"term\": \"Pastrami sandwich\", \"polarity\": \"positive\"}, {\"term\": \"pickles\", \"polarity\": \"positive\"}, {\"term\": \"beer\", \"polarity\": \"positive\"}, {\"term\": \"drink\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-223", "raw_output": "[{\"term\": \"reservation\", \"polarity\": \"neutral\"}, {\"term\": \"Friday night\", \"polarity\": \"neutral\"}, {\"term\": \"reservation\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-1639", "raw_output": "[{\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"noodles\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-694", "raw_output": "[{\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1491", "raw_output": "[{\"term\": \"appetizers\", \"polarity\": \"positive\"}, {\"term\": \"sampling\", \"polarity\": \"positive\"}, {\"term\": \"share\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-824", "raw_output": "[{\"term\": \"menu choices\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-124", "raw_output": "[{\"term\": \"pesto pizza\", \"polarity\": \"positive\"}, {\"term\": \"house salad\", \"polarity\": \"positive\"}, {\"term\": \"bottle of wine\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-201", "raw_output": "[{\"term\": \"cooking\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1323", "raw_output": "[{\"term\": \"aesthetics\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1338", "raw_output": "[{\"term\": \"spices\", \"polarity\": \"positive\"}, {\"term\": \"eggs\", \"polarity\": \"positive\"}, {\"term\": \"roti\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1379", "raw_output": "[{\"term\": \"food\", \"polarity\": \"conflict\"}, {\"term\": \"prixe fixe tasting menu\", \"polarity\": \"positive\"}, {\"term\": \"food allergies\", \"polarity\": \"neutral\"}, {\"term\": \"food you don't like\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-110", "raw_output": "[{\"term\": \"Pizza\", \"polarity\": \"positive\"}, {\"term\": \"garlic knots\", \"polarity\": \"positive\"}, {\"term\": \"delivery\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1907", "raw_output": "[{\"term\": \"drinks\", \"polarity\": \"positive\"}, {\"term\": \"drinks\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-956", "raw_output": "[{\"term\": \"course\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-841", "raw_output": "[{\"term\": \"cost\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-867", "raw_output": "[{\"term\": \"reservations\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-725", "raw_output": "[{\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"server\", \"polarity\": \"positive\"}, {\"term\": \"table\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-882", "raw_output": "[{\"term\": \"dish\", \"polarity\": \"negative\"}, {\"term\": \"price\", \"polarity\": \"negative\"}, {\"term\": \"taste\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1349", "raw_output": "[{\"term\": \"waiter\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1964", "raw_output": "[{\"term\": \"wine\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-193", "raw_output": "[{\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"waiters\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-389", "raw_output": "[{\"term\": \"waiter\", \"polarity\": \"neutral\"}]"}
+{"id": "restaurants-833", "raw_output": "[{\"term\": \"cream cheeses\", \"polarity\": \"positive\"}, {\"term\": \"coffee\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1653", "raw_output": "[{\"term\": \"Indian oldies film stars\", \"polarity\": \"positive\"}, {\"term\": \"portraits of Indian actors and actresses\", \"polarity\": \"positive\"}, {\"term\": \"black white\", \"polarity\": \"positive\"}, {\"term\": \"Indian actors and actresses\", \"polarity\": \"positive\"}, {\"term\": \"portraits\", \"polarity\": \"positive\"}, {\"term\": \"Indian oldies film stars\", \"polarity\": \"positive\"}, {\"term\": \"actors and actresses\", \"polarity\": \"positive\"}, {\"term\": \"portraits\", \"polarity\": \"positive\"}, {\"term\": \"Indian actors and actresses\", \"polarity\": \"positive\"}, {\"term\": \"portraits\", \"polarity\": \"positive\"}, {\"term\": \"Indian oldies film stars\", \"polarity\": \"positive\"}, {\"term\": \"actors and actresses\", \"polarity\": \"positive\"}, {\"term\": \"portraits\", \"polarity\": \"positive\"}, {\"term\": \"Indian actors and actresses\", \"polarity\": \"positive\"}, {\"term\": \"portraits\", \"polarity\": \"positive\"}, {\"term\": \"Indian oldies film stars\", \"polarity\": \"positive\"},"}
+{"id": "restaurants-1707", "raw_output": "[{\"term\": \"service\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-1606", "raw_output": "[{\"term\": \"steak\", \"polarity\": \"positive\"}, {\"term\": \"butter\", \"polarity\": \"positive\"}, {\"term\": \"flavor\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-497", "raw_output": "[{\"term\": \"bill\", \"polarity\": \"neutral\"}, {\"term\": \"liquers\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-968", "raw_output": "[{\"term\": \"Bill\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1180", "raw_output": "[{\"term\": \"wait\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1169", "raw_output": "[{\"term\": \"workers\", \"polarity\": \"conflict\"}, {\"term\": \"female customers\", \"polarity\": \"conflict\"}, {\"term\": \"order\", \"polarity\": \"conflict\"}]"}
+{"id": "restaurants-1481", "raw_output": "[{\"term\": \"waitresses\", \"polarity\": \"positive\"}, {\"term\": \"counter service\", \"polarity\": \"positive\"}, {\"term\": \"sit\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-270", "raw_output": "[{\"term\": \"music\", \"polarity\": \"negative\"}]"}
+{"id": "restaurants-1753", "raw_output": "[{\"term\": \"spinach\", \"polarity\": \"positive\"}, {\"term\": \"Shanghai low mein\", \"polarity\": \"positive\"}, {\"term\": \"attractions\", \"polarity\": \"positive\"}]"}
+{"id": "restaurants-438", "raw_output": "[{\"term\": \"desserts\", \"polarity\": \"positive\"}, {\"term\": \"frog jelly\", \"polarity\": \"positive\"}, {\"term\": \"black vinegar\", \"polarity\": \"positive\"}, {\"term\": \"ginger simmered\", \"polarity\": \"positive\"}, {\"term\": \"pig feet\", \"polarity\": \"positive\"}, {\"term\": \"NY\", \"polarity\": \"neutral\"}, {\"term\": \"Northeastern America\", \"polarity\": \"neutral\"}, {\"term\": \"chinese\", \"polarity\": \"positive\"}, {\"term\": \"serves\", \"polarity\": \"positive\"}, {\"term\": \"varieties\", \"polarity\": \"positive\"}, {\"term\": \"simmered\", \"polarity\": \"positive\"}, {\"term\": \"viscous\", \"polarity\": \"positive\"}, {\"term\": \"sweet\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sauce\", \"polarity\": \"positive\"}, {\"term\": \"sau"}
+{"id": "restaurants-994", "raw_output": "[{\"term\": \"spinach mushroom calzone\", \"polarity\": \"negative\"}]"}

@@ -1,0 +1,439 @@
+{
+  "predictions_file": "results/predictions/served-vllm-final_restaurants_val.jsonl",
+  "gold_file": "data/processed/restaurants_val.jsonl",
+  "n_examples": 302,
+  "total_errors": 408,
+  "category_counts": {
+    "hallucinated_aspect": 195,
+    "missed_aspect": 113,
+    "wrong_polarity:neutral->positive": 28,
+    "wrong_polarity:neutral->negative": 17,
+    "wrong_polarity:negative->conflict": 12,
+    "unparseable_output": 12,
+    "wrong_polarity:negative->positive": 8,
+    "wrong_polarity:neutral->conflict": 5,
+    "wrong_polarity:positive->neutral": 5,
+    "wrong_polarity:conflict->positive": 4,
+    "wrong_polarity:negative->neutral": 3,
+    "wrong_polarity:positive->negative": 3,
+    "wrong_polarity:conflict->negative": 2,
+    "wrong_polarity:conflict->neutral": 1
+  },
+  "samples": {
+    "hallucinated_aspect": [
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "pred_term": "minimun",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "pred_term": "bottle",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "pred_term": "music",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "pred_term": "minimun",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "pred_term": "bottle",
+        "pred_polarity": "positive"
+      }
+    ],
+    "wrong_polarity:neutral->negative": [
+      {
+        "id": "restaurants-1373",
+        "text": "Its not curry in a slurry crap, and regular run of the mill food.",
+        "term": "food",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1373",
+        "text": "Its not curry in a slurry crap, and regular run of the mill food.",
+        "term": "curry",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-889",
+        "text": "Admittedly, this is not the place for gigantic pieces of fish overflowing the plate (and thank goodness, in my opinion) but for simple, elegant sushi there is no better place in New York or anywhere in the US.",
+        "term": "fish",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1131",
+        "text": "Service is average.",
+        "term": "Service",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1358",
+        "text": "If you are someone who appreciates the same things but hope to have food to spare or share, Kai may not be the best option.",
+        "term": "food",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:neutral->positive": [
+      {
+        "id": "restaurants-1064",
+        "text": "We were fast to order the appetizer platter since we were very hungry.",
+        "term": "appetizer platter",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1623",
+        "text": "this is the best secret place in midtown', I heard that from the bartender, after having brilliant food ( try steak with portobello mushrooms) and drinks on the bar last Tuesday.",
+        "term": "bar",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-631",
+        "text": "If it's just a quick martini at the bar (which I recommend Jeffery's) or a mind blowing Roast Chicken, go to Village!",
+        "term": "martini",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-631",
+        "text": "If it's just a quick martini at the bar (which I recommend Jeffery's) or a mind blowing Roast Chicken, go to Village!",
+        "term": "bar",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-566",
+        "text": "Did I mention the wine?",
+        "term": "wine",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      }
+    ],
+    "missed_aspect": [
+      {
+        "id": "restaurants-1837",
+        "text": "Here you get the zen feel without feeling rigid.",
+        "term": "zen feel",
+        "gold_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1623",
+        "text": "this is the best secret place in midtown', I heard that from the bartender, after having brilliant food ( try steak with portobello mushrooms) and drinks on the bar last Tuesday.",
+        "term": "bartender",
+        "gold_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1623",
+        "text": "this is the best secret place in midtown', I heard that from the bartender, after having brilliant food ( try steak with portobello mushrooms) and drinks on the bar last Tuesday.",
+        "term": "steak with portobello mushrooms",
+        "gold_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1839",
+        "text": "I fell in love with the egg noodles in the beef broth with shrimp dumplings and slices of BBQ roast pork.",
+        "term": "egg noodles in the beef broth with shrimp dumplings and slices of BBQ roast pork",
+        "gold_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1189",
+        "text": "Food was good and the view of the new york city skiline was terrific even on a foggy rainy day like that of when I went.",
+        "term": "view",
+        "gold_polarity": "positive"
+      }
+    ],
+    "wrong_polarity:negative->conflict": [
+      {
+        "id": "restaurants-893",
+        "text": "The menu is nothing like the one on the website.",
+        "term": "menu",
+        "gold_polarity": "negative",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-48",
+        "text": "The menu is very limited - i think we counted 4 or 5 entrees.",
+        "term": "menu",
+        "gold_polarity": "negative",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-221",
+        "text": "You order from a menu, so you leave feeling like you missed the full experience.",
+        "term": "menu",
+        "gold_polarity": "negative",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-702",
+        "text": "The service is a little scatty at times but all is forgiven when the food arrives.",
+        "term": "service",
+        "gold_polarity": "negative",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-613",
+        "text": "Make reservations but expect to be delayed 15-20 minutes as the hosting staff was having difficulty seating guests who arrived with a reservation because they probably had a lot of walk ins being so close to Time Square.",
+        "term": "reservations",
+        "gold_polarity": "negative",
+        "pred_polarity": "conflict"
+      }
+    ],
+    "wrong_polarity:conflict->positive": [
+      {
+        "id": "restaurants-1805",
+        "text": "The staff has been nice, but they seemed really stressed and the unisex bathroom needs to be cleaned more often.",
+        "term": "staff",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-79",
+        "text": "An oasis of refinement:  Food, though somewhat uneven, often reaches the pinnacles of new American fine cuisine - chef's passion (and kitchen's precise execution) is most evident in the fish dishes and soups.",
+        "term": "Food",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-508",
+        "text": "You can get an excellent meal at most of the many Indian restaurants on nearby Lexington Avenue for the cost of one the dainty dishes here.",
+        "term": "cost",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-119",
+        "text": "The atmosphere was crowded but it was a great bistro-type vibe.",
+        "term": "atmosphere",
+        "gold_polarity": "conflict",
+        "pred_polarity": "positive"
+      }
+    ],
+    "wrong_polarity:negative->neutral": [
+      {
+        "id": "restaurants-1659",
+        "text": "The space is nice but when we order our drink we were in for a surprise.",
+        "term": "drink",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1040",
+        "text": "When we were finally seated our waitress came by twice-1 for our order and 2-for our check.",
+        "term": "waitress",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-976",
+        "text": "They charge $6.00 for rice.",
+        "term": "rice",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      }
+    ],
+    "unparseable_output": [
+      {
+        "id": "restaurants-56",
+        "text": "Dip the ingredients in with your chopsticks, swirl them around, and eat.",
+        "raw_output": "[{\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"ingredients\", \"polarity\": \"neutral\"}, {\"term\": \"i"
+      },
+      {
+        "id": "restaurants-456",
+        "text": "I went at 6:00 PM specifically for the pre-theater menu ($19.95 for roasted tomato soup with chevre, steak frites, creme brulee) and it was marvelous.",
+        "raw_output": "[{\"term\": \"pre-theater menu\", \"polarity\": \"positive\"}, {\"term\": \"chevre\", \"polarity\": \"positive\"}, {\"term\": \"steak frites\", \"polarity\": \"positive\"}, {\"term\": \"creme brulee\", \"polarity\": \"positive\"}, {\"term\": \"roasted tomato soup\", \"polarity\": \"positive\"}, {\"term\": \"steak\", \"polarity\": \"positive\"}, {"
+      },
+      {
+        "id": "restaurants-716",
+        "text": "Whether it's the parmesean porcini souffle or the lamb glazed with balsamic vinegar, you will surely be transported to Northern Italy with one bite.",
+        "raw_output": "[{\"term\": \"parmesean porcini souffle\", \"polarity\": \"positive\"}, {\"term\": \"lamb\", \"polarity\": \"positive\"}, {\"term\": \"balsamic vinegar\", \"polarity\": \"positive\"}, {\"term\": \"souffle\", \"polarity\": \"positive\"}, {\"term\": \"glazed\", \"polarity\": \"positive\"}, {\"term\": \"porcini\", \"polarity\": \"positive\"}, {\"term"
+      },
+      {
+        "id": "restaurants-332",
+        "text": "The Italian food has flavor (that can be sort of surprising on the UES), and the service turns from a nightmare to attentive,they sort of remind me of the NY Yankees of the late 90's, no matter how bad it look, you knew that there was a rally just around the corner...",
+        "raw_output": "[{\"term\": \"Italian food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"polarity\": \"positive\"}, {\"term\": \"Italian food\", \"polarity\": \"positive\"}, {\"term\": \"food\", \"polarity\": \"positive\"}, {\"term\": \"service\", \"pola"
+      },
+      {
+        "id": "restaurants-210",
+        "text": "overall, a solid restaurant and at less than $40pp (including wine), a solid deal as well.",
+        "raw_output": "[{\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"wine\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"}, {\"term\": \"price\", \"polarity\": \"positive\"},"
+      }
+    ],
+    "wrong_polarity:negative->positive": [
+      {
+        "id": "restaurants-395",
+        "text": "Prices are higher to dine in and their chicken tikka marsala is quite good.",
+        "term": "Prices",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-500",
+        "text": "Food was very good as well, considering that we tried the budget selection (though I wish the pork belly that I ordered was roasted a bit longer, so that fat was more of a melt-in-your-mouth experience).",
+        "term": "pork belly",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-500",
+        "text": "Food was very good as well, considering that we tried the budget selection (though I wish the pork belly that I ordered was roasted a bit longer, so that fat was more of a melt-in-your-mouth experience).",
+        "term": "fat",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-858",
+        "text": "My husband said the portions were very small, but if my main course was good to eat the portion would've been fine for me.",
+        "term": "main course",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-245",
+        "text": "As we were sitting eating the subpar food the manager proceeded to berate a couple of his employees for putting out the wrong containers for condiments and explained to them how expensive these containers were.",
+        "term": "manager",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      }
+    ],
+    "wrong_polarity:neutral->conflict": [
+      {
+        "id": "restaurants-1792",
+        "text": "Seating is ok even though sometimes there's alot of people.",
+        "term": "Seating",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-148",
+        "text": "A narrow corridor leads to a tiny space where there are three tiny white tiled counters, a great deal of mess (stacks of bottles, cans) and a small counter holding 12-14 entrees.",
+        "term": "entrees",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-1382",
+        "text": "The food however, is what one might expect.",
+        "term": "food",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-1110",
+        "text": "night without a reservation, we had to wait at the bar for a little while, but the manager was so nice and made our wait a great experience.",
+        "term": "reservation",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-824",
+        "text": "The menu choices are similar but the taste lacked more flavor than it looked.",
+        "term": "menu choices",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      }
+    ],
+    "wrong_polarity:conflict->negative": [
+      {
+        "id": "restaurants-1304",
+        "text": "Even with the prix fixe pricing, this restaurant is not worth it.",
+        "term": "prix fixe pricing",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-340",
+        "text": "The atmosphere is noisy and the waiters are literally walking around doing things as fast as they can.",
+        "term": "waiters",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:positive->neutral": [
+      {
+        "id": "restaurants-1407",
+        "text": "Obv caviar is top of the line but the rest of the menu is so diverse it gives you a chance to taste so manydifferent varietys.",
+        "term": "menu",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1520",
+        "text": "The menu consisted of standard brassiere food, better then places like Balthazar etc.",
+        "term": "menu",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1686",
+        "text": "We ran a little late for the reservation but it wasn't a problem to get our table immediately.",
+        "term": "table",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1110",
+        "text": "night without a reservation, we had to wait at the bar for a little while, but the manager was so nice and made our wait a great experience.",
+        "term": "wait",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-103",
+        "text": "I look forward to eating here again",
+        "term": "eating",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      }
+    ],
+    "wrong_polarity:positive->negative": [
+      {
+        "id": "restaurants-212",
+        "text": "Based on the reviews for dinner, this is a place I would reconsider revisiting for that, but definitely not for Dim Sum again.",
+        "term": "dinner",
+        "gold_polarity": "positive",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1543",
+        "text": "The decor in this place is very diner-ish and the kind of place you expect in the East Village - not romantic, just simple, small and sparse.",
+        "term": "decor",
+        "gold_polarity": "positive",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1543",
+        "text": "The decor in this place is very diner-ish and the kind of place you expect in the East Village - not romantic, just simple, small and sparse.",
+        "term": "place",
+        "gold_polarity": "positive",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:conflict->neutral": [
+      {
+        "id": "restaurants-497",
+        "text": "Still, any quibbles about the bill were off-set by the pour-your-own measures of liquers which were courtesey of the house...",
+        "term": "bill",
+        "gold_polarity": "conflict",
+        "pred_polarity": "neutral"
+      }
+    ]
+  },
+  "wrong_polarity_llm_summary": "**Pattern 1 \u2013 Mild/hedged language mistaken for negative (understatement or moderate wording read as stronger sentiment):** Examples 2, 3, 8, 11, 14 show neutral, \"average\"/\"not the best\"/\"nothing stands out\" type phrasing that the model over-interprets as clearly negative, failing to recognize these as neutral hedges rather than criticism.\n\n**Pattern 2 \u2013 Spillover sentiment from surrounding context/adjacent aspects:** Examples 4, 5, 6, 7, 15 involve neutral factual mentions (pizza, apples, wine, appetizer platter, lunch) that pick up positive polarity from nearby positive words or overall positive sentence tone (\"favorites,\" \"great accompaniment,\" \"very hungry\"), even though the specific aspect itself isn't evaluated.\n\n**Pattern 3 \u2013 Conflict/contrast cases where model latches onto one clause:** Examples 9, 10, 12, 13 contain contrastive structure (positive-sounding surface description undercut by \"not romantic,\" \"lovely atmosphere\" vs \"will not return,\" a nice manager despite an unrelated neutral aspect, or a negative comparison framed neutrally) where the model picks the polarity of one clause/comparison while missing the true target polarity or the intended neutral/conflicting balance.\n\n**Pattern 4 \u2013 Misattributed comparative/conditional negativity:** Examples 1 and 11 involve conditional or comparative framing (\"wasn't a problem,\" \"if you like X, this is not for you\") where the model fails to correctly resolve the logical structure, missing an implied positive (1) or wrongly assigning negativity to an aspect that's actually just used as a comparison point (11)."
+}

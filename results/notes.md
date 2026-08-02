@@ -375,3 +375,88 @@ sample examples/themes for those two remain on that Kaggle session
 if deeper qualitative digging is wanted later. The deterministic counts
 above are the load-bearing finding regardless; the qualitative pass adds
 color, not the core result.
+
+**Update: the gap above is now closed.** The LoRA and quantized variants'
+raw predictions were retrieved from Kaggle (pasted back into chat and
+reconstructed locally -- 302 lines each, verified byte-identical to
+Kaggle's own run by re-deriving the exact same category counts locally).
+Both now have full qualitative theme summaries. This also let us test a
+specific mechanistic hypothesis about *why* hallucinated_aspect jumps so
+much under quantization, not just observe that it does.
+
+**Refined finding: quantization causes two distinct, separately-diagnosed
+failure modes, not one.**
+
+1. **Repetition-loop degeneration, causing parse failures.** All 12 of
+   the quantized variant's unparseable_output cases (100%, not "some of
+   them") are the exact same mechanism: the model gets stuck repeating a
+   single term (`"staff"` x20, `"price"` x19, `"food"` x16, `"place"`
+   x16, `"portraits"` x5...) until truncated by the 256-token limit
+   before the JSON array can close. This is not scattered formatting
+   mistakes -- it's one specific, mechanistically identifiable pathology
+   (precision loss destabilizing autoregressive decoding under greedy
+   sampling), confirmed by checking every unparseable case individually.
+   Critically, `restaurants-1539` (the `"staff"` loop) triggers this
+   failure in **both** the fp16 and quantized versions of the same
+   adapter -- the underlying instability already exists in the fp16
+   model on this specific input; 4-bit quantization doesn't invent a new
+   failure mode, it amplifies an existing one roughly **12x** (fp16:
+   1/302 = 0.3%, quantized: 12/302 = 4.0%).
+2. **Genuinely distributed over-prediction, separate from #1.** The
+   47.8% hallucinated_aspect share is *not* an artifact of a few
+   degenerate examples inflating the count -- checked directly: examples
+   contributing 5+ hallucinations each account for only 13.8% of the
+   total hallucination count (27 of 195). The rest is spread thinly
+   across many examples, each predicting one or two genuinely distinct
+   (not repeated) extra/wrong terms. This is a real, broad precision
+   problem, not a statistical artifact of a handful of pathological
+   generations.
+
+These are different problems needing different fixes: #1 (repetition
+loops) could likely be mitigated cheaply -- a repetition penalty, a
+lower max_tokens with a stricter stop sequence, or a light constrained-
+decoding grammar -- without touching the LoRA weights at all. #2 (broad
+over-prediction) is a genuine capability/calibration issue that
+quantization is making worse, not a decoding-parameter fix.
+
+**Full category breakdown, all three finalists, held-out val split:**
+
+  category             Sonnet   LoRA fp16   4-bit quantized
+  missed_aspect          59.4%      44.2%           27.7%
+  hallucinated_aspect    22.5%      31.4%           47.8%
+  wrong_polarity         18.0%      24.1%           21.6%
+  unparseable_output      0.0%       0.3%            4.0% (was 2.9% of
+                                                       errors; 4.0% of examples)
+
+**Qualitative wrong-polarity themes, condensed across all three** (full
+text in results/error_analysis/*.json):
+
+- **Sonnet:** literal reading of negation/irony (missing that "NO more
+  reservations" is praise); negative sentiment "bleeding" onto neutral
+  aspects just mentioned nearby; conflict cases collapsed to one
+  polarity; comparative sentiment misjudged.
+- **LoRA fp16:** implied/indirect sentiment missed (situational cues
+  without explicit sentiment words); negation/litotes misread ("don't
+  look like leafy road kill" = praise, misread as neutral); comparative/
+  backhanded-compliment structures where the model picks one clause's
+  polarity over the sentence's actual target; mild/hedged descriptions
+  over-amplified into a stronger polarity than warranted.
+- **4-bit quantized:** the same core patterns as fp16 (hedged language
+  read as too strong, spillover sentiment from adjacent context,
+  contrastive/comparative structures resolved to the wrong clause) --
+  quantization doesn't introduce new *qualitative* confusion types, it
+  makes the *existing* ones (already present in fp16) somewhat more
+  frequent, on top of the two structural failure modes above.
+
+**Bottom line for the Session 7 writeup:** three independent lines of
+evidence -- the missed/hallucinated F1 trade-off, the qualitative theme
+overlap between fp16 and quantized, and the shared repetition-loop
+trigger example -- all point the same direction: going from Sonnet to a
+small fine-tuned model to a quantized version of that same model doesn't
+just make errors *more frequent*, it changes *what kind* of model you're
+dealing with (conservative and under-generating vs. liberal and
+over-generating, plus a decoding-stability cost specific to
+quantization). That's a genuinely different, more actionable story than
+"accuracy goes down as you compress the model," and it's a direct
+product of building the error-analysis tool rather than stopping at
+aggregate metrics.

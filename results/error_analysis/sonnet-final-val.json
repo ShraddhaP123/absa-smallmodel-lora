@@ -1,0 +1,331 @@
+{
+  "predictions_file": "results/predictions/api-claude-sonnet-final_restaurants_val.jsonl",
+  "gold_file": "data/processed/restaurants_val.jsonl",
+  "n_examples": 302,
+  "total_errors": 276,
+  "category_counts": {
+    "missed_aspect": 164,
+    "hallucinated_aspect": 62,
+    "wrong_polarity:neutral->positive": 13,
+    "wrong_polarity:positive->neutral": 12,
+    "wrong_polarity:neutral->negative": 7,
+    "wrong_polarity:negative->neutral": 6,
+    "wrong_polarity:conflict->negative": 3,
+    "wrong_polarity:positive->negative": 2,
+    "wrong_polarity:neutral->conflict": 2,
+    "wrong_polarity:conflict->neutral": 2,
+    "wrong_polarity:negative->conflict": 2,
+    "wrong_polarity:negative->positive": 1
+  },
+  "samples": {
+    "hallucinated_aspect": [
+      {
+        "id": "restaurants-745",
+        "text": "Haru serves very fresh fish, has a trendy, modern ambiance, prime location on Park Avenue South and friendly service.",
+        "pred_term": "fresh fish",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-403",
+        "text": "If you like your music blasted and the system isnt that great and if you want to pay at least 100 dollar bottle minimun then you'll love it here.",
+        "pred_term": "system",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1373",
+        "text": "Its not curry in a slurry crap, and regular run of the mill food.",
+        "pred_term": "curry in a slurry crap",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1373",
+        "text": "Its not curry in a slurry crap, and regular run of the mill food.",
+        "pred_term": "regular run of the mill food",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1102",
+        "text": "Just don't take the seat between the bar and the back half of the restaurant, i saw a woman get nudged 40times sitting there.",
+        "pred_term": "seat between the bar and the back half of the restaurant",
+        "pred_polarity": "negative"
+      }
+    ],
+    "missed_aspect": [
+      {
+        "id": "restaurants-745",
+        "text": "Haru serves very fresh fish, has a trendy, modern ambiance, prime location on Park Avenue South and friendly service.",
+        "term": "fish",
+        "gold_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1373",
+        "text": "Its not curry in a slurry crap, and regular run of the mill food.",
+        "term": "curry",
+        "gold_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1373",
+        "text": "Its not curry in a slurry crap, and regular run of the mill food.",
+        "term": "food",
+        "gold_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-1102",
+        "text": "Just don't take the seat between the bar and the back half of the restaurant, i saw a woman get nudged 40times sitting there.",
+        "term": "seat",
+        "gold_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1102",
+        "text": "Just don't take the seat between the bar and the back half of the restaurant, i saw a woman get nudged 40times sitting there.",
+        "term": "bar",
+        "gold_polarity": "neutral"
+      }
+    ],
+    "wrong_polarity:positive->neutral": [
+      {
+        "id": "restaurants-719",
+        "text": "While there are plenty of places to go for a good corned beef sandwich, Katz's has a charm about it.",
+        "term": "corned beef sandwich",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-843",
+        "text": "we split a tasty vegetable samosa and the malai tikka wrap.",
+        "term": "malai tikka wrap",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-305",
+        "text": "When going out for a nice dinner, I like a nice ambiance as well as very good food.",
+        "term": "ambiance",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-305",
+        "text": "When going out for a nice dinner, I like a nice ambiance as well as very good food.",
+        "term": "food",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-212",
+        "text": "Based on the reviews for dinner, this is a place I would reconsider revisiting for that, but definitely not for Dim Sum again.",
+        "term": "dinner",
+        "gold_polarity": "positive",
+        "pred_polarity": "neutral"
+      }
+    ],
+    "wrong_polarity:negative->neutral": [
+      {
+        "id": "restaurants-221",
+        "text": "You order from a menu, so you leave feeling like you missed the full experience.",
+        "term": "menu",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-148",
+        "text": "A narrow corridor leads to a tiny space where there are three tiny white tiled counters, a great deal of mess (stacks of bottles, cans) and a small counter holding 12-14 entrees.",
+        "term": "space",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-148",
+        "text": "A narrow corridor leads to a tiny space where there are three tiny white tiled counters, a great deal of mess (stacks of bottles, cans) and a small counter holding 12-14 entrees.",
+        "term": "counters",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-148",
+        "text": "A narrow corridor leads to a tiny space where there are three tiny white tiled counters, a great deal of mess (stacks of bottles, cans) and a small counter holding 12-14 entrees.",
+        "term": "counter",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-164",
+        "text": "They might be all business at the counter when you give your order, but their food says I love you.",
+        "term": "counter",
+        "gold_polarity": "negative",
+        "pred_polarity": "neutral"
+      }
+    ],
+    "wrong_polarity:positive->negative": [
+      {
+        "id": "restaurants-508",
+        "text": "You can get an excellent meal at most of the many Indian restaurants on nearby Lexington Avenue for the cost of one the dainty dishes here.",
+        "term": "dishes",
+        "gold_polarity": "positive",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1035",
+        "text": "The grilled cheese at home afterwards was better.!!",
+        "term": "grilled cheese",
+        "gold_polarity": "positive",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:neutral->positive": [
+      {
+        "id": "restaurants-631",
+        "text": "If it's just a quick martini at the bar (which I recommend Jeffery's) or a mind blowing Roast Chicken, go to Village!",
+        "term": "martini",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-1784",
+        "text": "Ive been here so many times the waiters know my name.",
+        "term": "waiters",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-219",
+        "text": "The only thing I moderately enjoyed was their Grilled Chicken special with Edamame Puree.",
+        "term": "Grilled Chicken special with Edamame Puree",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-583",
+        "text": "kalbi and nebbiolo do work together.",
+        "term": "kalbi",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      },
+      {
+        "id": "restaurants-583",
+        "text": "kalbi and nebbiolo do work together.",
+        "term": "nebbiolo",
+        "gold_polarity": "neutral",
+        "pred_polarity": "positive"
+      }
+    ],
+    "wrong_polarity:neutral->conflict": [
+      {
+        "id": "restaurants-1792",
+        "text": "Seating is ok even though sometimes there's alot of people.",
+        "term": "Seating",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-1701",
+        "text": "The service is not consistently excellent -- just decent.",
+        "term": "service",
+        "gold_polarity": "neutral",
+        "pred_polarity": "conflict"
+      }
+    ],
+    "wrong_polarity:conflict->negative": [
+      {
+        "id": "restaurants-1304",
+        "text": "Even with the prix fixe pricing, this restaurant is not worth it.",
+        "term": "prix fixe pricing",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1379",
+        "text": "The food can get pricey but the prixe fixe tasting menu is the greatest food for a good price and they cater the food to any food allergies or food you don't like.",
+        "term": "food",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-497",
+        "text": "Still, any quibbles about the bill were off-set by the pour-your-own measures of liquers which were courtesey of the house...",
+        "term": "bill",
+        "gold_polarity": "conflict",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:neutral->negative": [
+      {
+        "id": "restaurants-7",
+        "text": "They did not have mayonnaise, forgot our toast, left out ingredients (ie cheese in an omelet), below hot temperatures and the bacon was so over cooked it crumbled on the plate when you touched it.",
+        "term": "cheese",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-416",
+        "text": "Oh yes, and they lie on the phone, claiming they have seating in the garden, then of course the seats are not available.",
+        "term": "seating in the garden",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1469",
+        "text": "A Thai restaurant out of rice during dinner?",
+        "term": "rice",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1358",
+        "text": "If you are someone who appreciates the same things but hope to have food to spare or share, Kai may not be the best option.",
+        "term": "food",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      },
+      {
+        "id": "restaurants-1218",
+        "text": "The food was mediocre at best but it was the horrible service that made me vow never to go back.",
+        "term": "food",
+        "gold_polarity": "neutral",
+        "pred_polarity": "negative"
+      }
+    ],
+    "wrong_polarity:conflict->neutral": [
+      {
+        "id": "restaurants-1873",
+        "text": "For years, I thought Tuscan cuisine was the best, but Salvatore converted me to the hearty Neapolitan fare on my first visit.",
+        "term": "Tuscan cuisine",
+        "gold_polarity": "conflict",
+        "pred_polarity": "neutral"
+      },
+      {
+        "id": "restaurants-340",
+        "text": "The atmosphere is noisy and the waiters are literally walking around doing things as fast as they can.",
+        "term": "waiters",
+        "gold_polarity": "conflict",
+        "pred_polarity": "neutral"
+      }
+    ],
+    "wrong_polarity:negative->conflict": [
+      {
+        "id": "restaurants-858",
+        "text": "My husband said the portions were very small, but if my main course was good to eat the portion would've been fine for me.",
+        "term": "portions",
+        "gold_polarity": "negative",
+        "pred_polarity": "conflict"
+      },
+      {
+        "id": "restaurants-167",
+        "text": "Ok, so the servers wander around a little clueless, but there's more than enough servers for the crowd they get -- it's fine, you just have to make a small effort to get their attention.",
+        "term": "servers",
+        "gold_polarity": "negative",
+        "pred_polarity": "conflict"
+      }
+    ],
+    "wrong_polarity:negative->positive": [
+      {
+        "id": "restaurants-1907",
+        "text": "While most people can attest to spending over $50 on drinks in New York bars and hardly feeling a thing, the drinks here are plentiful and unique.",
+        "term": "drinks",
+        "gold_polarity": "negative",
+        "pred_polarity": "positive"
+      }
+    ]
+  },
+  "wrong_polarity_llm_summary": "**Pattern 1 \u2014 Implicit/indirect sentiment mistaken for neutral (majority of cases):** The model defaults to \"neutral\" when sentiment is conveyed through description or contextual implication rather than explicit sentiment words. Examples 2 (sparse/simple decor implying charm), 3, 4 (airport-lounge comparison read as fact rather than negative judgment), 5, 6 (mess/tiny implying negative), 7, 8, 10, 13 all show the model failing to infer polarity from descriptive or comparative language, defaulting to neutral instead.\n\n**Pattern 2 \u2014 Conflict cases where the model collapses to one side or invents conflict:** Genuine mixed-sentiment sentences trip up the model in both directions \u2014 it sometimes flattens a true conflict into a single polarity (11: bill's negative aspect offset by positive, predicted purely negative) and sometimes fabricates conflict where gold is a single clear polarity (9: \"not consistently excellent -- just decent\" is gold neutral but predicted conflict; 14: portions gold negative but predicted conflict due to the hedging clause).\n\n**Pattern 3 \u2014 Sarcasm/rhetorical framing read literally:** Example 1 (\"A Thai restaurant out of rice?\") is a rhetorical, incredulous complaint, but the model treats \"rice\" neutrally as if merely stating a fact, missing the implied criticism.\n\n**Pattern 4 \u2014 Comparative/backhanded praise misread:** Example 15 uses a comparison (\"most people... hardly feeling a thing, but drinks here are plentiful and unique\") to imply overly strong/expensive drinks as a negative, and example 12 mentions \"menu\" only as evidence of staff knowledge (neutral aspect) but the model bleeds surrounding positive sentiment onto it \u2014 both show the model failing to isolate the aspect from adjacent positive language."
+}

@@ -296,3 +296,82 @@ flagged in CLAUDE.md as belonging in Session 6 alongside quantize/serve,
 but the serving work took priority. Worth doing before Session 7's
 writeup, now that there are 4 restaurant-domain prediction sets to compare
 (r8, r8+mlp, r8+mlp+synth, and the quantized-served version) plus Sonnet's.
+
+### Session 7 — held-out final numbers + error-analysis tool built + biggest finding of the project
+
+**Methodology note, stated plainly for the writeup:** "test" was reused
+across Sessions 2-6 to compare every variant and make real decisions (add
+MLP modules, add synthetic data) based on its numbers -- that makes it a
+de facto dev set, not a clean held-out set, despite the filename. "val"
+was only ever used for the Trainer's internal loss monitoring (a
+different metric -- LM loss, not ABSA F1) during training, never for
+cross-variant comparisons, so it's the genuinely untouched split. All
+numbers below are on val (restaurants, n=302), for exactly the three
+finalist variants: Sonnet 5 (ceiling), the best fp16 LoRA
+(r8+MLP+synth), and that same adapter merged + 4-bit quantized + served
+via vLLM.
+
+  Sonnet 5 (ceiling):        aspect_f1=0.775  sentiment_acc=0.880  joint_f1=0.682  parse_rate=1.000
+  LoRA fp16 (r8+MLP+synth):  aspect_f1=0.763  sentiment_acc=0.810  joint_f1=0.618  parse_rate=0.997
+  4-bit quantized, served:   aspect_f1=0.715  sentiment_acc=0.794  joint_f1=0.568  parse_rate=0.960
+
+As % of Sonnet's ceiling: LoRA fp16 reaches 90.6% joint_f1 (98.4%
+aspect_f1, 92.1% sentiment_acc); quantized drops to 83.3% joint_f1 (92.3%
+aspect_f1, 90.3% sentiment_acc). These are consistent with the test-split
+numbers throughout the project (89-92% range) -- the held-out check
+confirms the earlier numbers weren't split-specific flukes.
+
+**The error-analysis tool (error_analysis.py) is built and validated** --
+categorizes every prediction/gold disagreement into missed_aspect,
+hallucinated_aspect, and wrong_polarity:X->Y confusion pairs, with an
+optional Claude-assisted qualitative pass over the wrong-polarity sample
+(read-only, never affects a score, per CLAUDE.md's one sanctioned
+LLM-outside-the-measurement-path exception). One real bug fixed along the
+way: the LLM pass failing (no ANTHROPIC_API_KEY on Kaggle) was crashing
+the whole script *before* the reliable deterministic report got saved or
+printed -- fixed so the optional step can never take the reliable core
+down with it.
+
+**The biggest single finding in this entire project** -- run on all three
+finalists' held-out val predictions:
+
+  category           Sonnet   LoRA fp16   4-bit quantized
+  missed_aspect       59.4%      44.2%         27.7%
+  hallucinated_aspect 22.5%      31.4%         47.8%
+  wrong_polarity      18.0%      24.1%         21.6%
+  unparseable          0.0%       0.3%          2.9%
+
+This is not noise -- missed_aspect and hallucinated_aspect trade off
+almost perfectly monotonically as the model shrinks/compresses (Sonnet ->
+fp16 LoRA -> 4-bit quantized). **A frontier model is conservative: its
+main failure mode is under-generating, missing implicit or subtly-phrased
+aspects. A heavily compressed small model is the opposite: its main
+failure mode is over-generating, flagging things as aspects that aren't
+one at all.** This is a categorically different failure signature, not a
+scaled-down version of the same weaknesses -- similar overall aspect_f1
+numbers across variants (0.775 / 0.763 / 0.715) were masking a real shift
+in *how* that number is composed (different precision/recall balance),
+which the aggregate F1 alone completely hides. This is exactly the kind
+of result the error-analysis tool exists to surface, and it's a much
+stronger, more specific claim for the final writeup than "the small model
+is somewhat worse."
+
+**Secondary finding, worth stating as a hypothesis, not a proven cause:**
+in the LoRA fp16 breakdown, `neutral->positive` is the single largest
+specific wrong-polarity confusion (7.6% of all its errors), and
+`conflict->positive` shows up prominently (2.7%) -- neither is a notable
+pattern for Sonnet. Session 5's synthetic data included an "understatement"
+category specifically teaching the model to read soft/hedged language as
+leaning positive; it's plausible that generalized into over-reading
+positive sentiment where gold says neutral or conflict. Not confirmed --
+would need a targeted follow-up (e.g. an ablation removing just the
+understatement category) to actually test this causally.
+
+**Known gap:** the LLM-assisted qualitative theme summary only ran
+successfully for Sonnet (has ANTHROPIC_API_KEY locally); the LoRA and
+quantized variants' runs were on Kaggle, which has no API key configured,
+so only their deterministic category counts are logged -- the specific
+sample examples/themes for those two remain on that Kaggle session
+if deeper qualitative digging is wanted later. The deterministic counts
+above are the load-bearing finding regardless; the qualitative pass adds
+color, not the core result.

@@ -1,0 +1,17 @@
+# Session 7 final held-out evaluation: same served/quantized model as
+# served-vllm.yaml (Session 6) except split: val instead of test -- see
+# api-claude-sonnet-final.yaml for why "test" is no longer a clean
+# held-out set for this project.
+
+name: served-vllm-final
+backend: vllm
+domain: restaurants
+split: val
+prompt_template: variants/prompts/absa_extract.txt
+max_new_tokens: 256
+temperature: 0.0
+hardware: T4 (4-bit quantized, vLLM)
+
+vllm:
+  endpoint: http://localhost:8000/v1
+  model: absa-lora-merged

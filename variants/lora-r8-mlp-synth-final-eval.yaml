@@ -1,0 +1,19 @@
+# Session 7 final held-out evaluation: same adapter as
+# lora-r8-mlp-synth-eval.yaml (Session 5's best LoRA config) except
+# split: val instead of test -- see api-claude-sonnet-final.yaml for why
+# "test" is no longer a clean held-out set for this project.
+
+name: lora-r8-mlp-synth-final-eval
+backend: hf
+domain: restaurants
+split: val
+prompt_template: variants/prompts/absa_extract.txt
+max_new_tokens: 256
+temperature: 0.0
+hardware: T4
+
+hf:
+  base_model: HuggingFaceTB/SmolLM2-1.7B-Instruct
+  lora_adapter: checkpoints/lora-r8-mlp-synth
+  quantization: null
+  device: cuda

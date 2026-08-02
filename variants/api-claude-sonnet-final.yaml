@@ -1,0 +1,20 @@
+# Session 7 final held-out evaluation: same as api-claude-sonnet.yaml
+# (Session 2) except split: val, not test. "test" was used repeatedly
+# across Sessions 2-6 to compare variants and make decisions (add MLP
+# modules, add synthetic data) -- that makes it a de facto dev set, not a
+# clean held-out set. "val" was only ever used for the Trainer's internal
+# loss monitoring during training, never for cross-variant ABSA-metric
+# comparisons, so it's the genuinely untouched split for final numbers.
+
+name: api-claude-sonnet-final
+backend: api
+domain: restaurants
+split: val
+prompt_template: variants/prompts/absa_extract.txt
+max_new_tokens: 256
+temperature: 0.0
+hardware: local
+
+api:
+  provider: anthropic
+  model: claude-sonnet-5

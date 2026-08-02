@@ -225,3 +225,74 @@ limitation -- if Sonnet's own conflict/sarcasm labels have systematic
 blind spots, this data could reinforce rather than correct them. Manual
 spot-checking a sample of the 290 synthetic examples would be worth doing
 before trusting this dataset for anything beyond this one experiment.
+
+### Session 6 — quantize + serve (best adapter, 4-bit, vLLM)
+
+Merged the Session 5 adapter (r8+MLP+synth, the best checkpoint so far)
+into the base model via merge_adapter.py, then served it through vLLM with
+on-the-fly 4-bit bitsandbytes quantization (--quantization bitsandbytes
+--load-format bitsandbytes -- no calibration dataset needed). Ran on
+Kaggle directly (no Docker; Kaggle notebooks have no Docker daemon --
+serve/Dockerfile remains a "how you'd really deploy this" reference, not
+something actually run for this project's own numbers).
+
+Real bug caught before running: eval/runner.py's vLLM backend and
+serve/loadtest.py were both hitting vLLM's /chat/completions endpoint,
+which auto-applies the tokenizer's chat template -- but training used a
+raw, unwrapped prompt (matching the hf backend exactly). Fixed both to use
+plain /completions with a "prompt" field, so the served model sees the
+exact format it was trained on, same principle as the train/inference
+consistency rule from Session 3.
+
+**Accuracy cost of quantization** (same adapter, same eval set, only
+precision changed):
+
+  unquantized fp16 (Session 5): aspect_f1=0.783  sentiment_acc=0.813  joint_f1=0.636  parse_rate=1.000
+  4-bit quantized  (Session 6): aspect_f1=0.740  sentiment_acc=0.775  joint_f1=0.574  parse_rate=0.957
+
+joint_f1 dropped 9.9% relative -- the largest single-cause accuracy drop in
+the whole project so far, bigger than any gain from Sessions 4 or 5
+combined. parse_rate also regressed (13/304 unparseable, vs 0 before).
+This is a real, structural tradeoff -- unlike the earlier ablations, this
+one is squarely "give something up to get something else," not a free
+improvement.
+
+**Latency: sequential vs. concurrent, and this is the most informative
+number in the whole project so far.**
+
+  sequential (eval run, 1 request at a time): p50=798ms   p95=2183ms
+  concurrent load test (concurrency=8, n=100): p50=3968ms  p95=16490ms  throughput=1.34 req/s
+
+Run one request at a time, this quantized 1.7B model is *faster* than
+Sonnet's API (798ms vs Sonnet's 1581ms in Session 2) -- unsurprising, no
+network hop, much smaller model. But at just 8 concurrent requests, p50
+jumps 5x and p95 blows out to 16.5 seconds. **A single T4 cannot serve
+this model to even a handful of simultaneous users without severe
+degradation.** This is exactly the kind of finding the "hardware
+footprint" axis of the tradeoff table exists to surface -- the small
+model's per-request cost advantage over an API is real, but only holds at
+low concurrency; serving it to real traffic would need either more/bigger
+GPUs or a lower concurrency ceiling than the API alternative, which has
+its own (opaque, presumably much larger) serving infrastructure behind it.
+
+Both measurements are logged as separate rows (served-vllm for the
+sequential/eval numbers, served-vllm-loadtest for the concurrent numbers)
+per the /log-run convention -- the load-test row reuses the same accuracy
+metrics rather than re-scoring, since it's the same served model.
+
+**Pip noise, not a real failure:** installing vllm produced a large block
+of "ERROR: pip's dependency resolver..." messages about version conflicts
+in packages this project never uses (bigframes, google-adk, gradio, the
+cudf/cuml/dask-cuda RAPIDS stack -- all part of Kaggle's base image). The
+server started and served correctly regardless; these were pip being
+noisy about unrelated parts of the environment, not a vllm install
+failure. Worth remembering if this comes up again: check whether the
+package in the warning is actually imported anywhere in this project
+before treating a pip dependency-conflict report as blocking.
+
+**Still to do:** the error-analysis tool (read results/predictions/*.jsonl
+across variants, categorize failure types) hasn't been built yet --
+flagged in CLAUDE.md as belonging in Session 6 alongside quantize/serve,
+but the serving work took priority. Worth doing before Session 7's
+writeup, now that there are 4 restaurant-domain prediction sets to compare
+(r8, r8+mlp, r8+mlp+synth, and the quantized-served version) plus Sonnet's.

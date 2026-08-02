@@ -11,11 +11,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from eval.runner import build_prompt  # noqa: E402  (needs sys.path set first)
+
+PROMPT_TEMPLATE = "variants/prompts/absa_extract.txt"
 
 
 def load_texts(domain: str, split: str, limit: int) -> list[str]:
@@ -29,13 +35,16 @@ def load_texts(domain: str, split: str, limit: int) -> list[str]:
     return texts
 
 
-def call(endpoint: str, model: str, text: str) -> float:
+def call(endpoint: str, model: str, domain: str, text: str) -> float:
+    # Plain /completions, not /chat/completions -- matches eval/runner.py's
+    # run_vllm_backend and the raw-text prompt format training actually used.
+    prompt = build_prompt(PROMPT_TEMPLATE, domain, text)
     start = time.perf_counter()
     resp = requests.post(
-        f"{endpoint}/chat/completions",
+        f"{endpoint}/completions",
         json={
             "model": model,
-            "messages": [{"role": "user", "content": text}],
+            "prompt": prompt,
             "max_tokens": 256,
             "temperature": 0.0,
         },
@@ -63,7 +72,7 @@ def main() -> None:
     texts = load_texts(args.domain, args.split, args.n)
     start = time.perf_counter()
     with ThreadPoolExecutor(max_workers=args.concurrency) as pool:
-        latencies = list(pool.map(lambda t: call(args.endpoint, args.model, t), texts))
+        latencies = list(pool.map(lambda t: call(args.endpoint, args.model, args.domain, t), texts))
     wall = time.perf_counter() - start
 
     print(f"n={len(latencies)} concurrency={args.concurrency}")

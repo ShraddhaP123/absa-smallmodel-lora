@@ -197,11 +197,14 @@ def run_vllm_backend(config: dict, golds: list[GoldExample]) -> tuple[dict[str, 
     for gold in golds:
         prompt = build_prompt(config["prompt_template"], config["domain"], gold.text)
         start = time.perf_counter()
+        # Plain /completions, not /chat/completions: the latter auto-applies the
+        # tokenizer's chat template, which training never saw (train.py and the
+        # hf backend both use this exact raw-text prompt, unwrapped).
         resp = requests.post(
-            f"{vllm_cfg['endpoint']}/chat/completions",
+            f"{vllm_cfg['endpoint']}/completions",
             json={
                 "model": vllm_cfg["model"],
-                "messages": [{"role": "user", "content": prompt}],
+                "prompt": prompt,
                 "temperature": config.get("temperature", 0.0),
                 "max_tokens": config.get("max_new_tokens", 256),
             },
@@ -209,7 +212,7 @@ def run_vllm_backend(config: dict, golds: list[GoldExample]) -> tuple[dict[str, 
         )
         resp.raise_for_status()
         latencies.append((time.perf_counter() - start) * 1000)
-        predictions[gold.id] = resp.json()["choices"][0]["message"]["content"]
+        predictions[gold.id] = resp.json()["choices"][0]["text"]
 
     return predictions, latencies
 

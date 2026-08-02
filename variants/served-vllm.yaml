@@ -1,0 +1,19 @@
+# Session 6: evaluates the best adapter (lora-r8-mlp-synth), merged and
+# quantized, served through vLLM's OpenAI-compatible API -- the actual
+# serving stack, not a direct transformers .generate() call. Must run on
+# the GPU (Kaggle) against a locally running vLLM server (no Docker; Kaggle
+# notebooks can't run Docker, so vLLM runs as a plain background process --
+# see PLAN.md Session 6 for the combined setup+serve+eval+loadtest cell).
+
+name: served-vllm
+backend: vllm
+domain: restaurants
+split: test
+prompt_template: variants/prompts/absa_extract.txt
+max_new_tokens: 256
+temperature: 0.0
+hardware: T4 (4-bit quantized, vLLM)
+
+vllm:
+  endpoint: http://localhost:8000/v1
+  model: absa-lora-merged
